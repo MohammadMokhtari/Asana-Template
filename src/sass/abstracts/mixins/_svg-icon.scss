@@ -1,0 +1,37 @@
+@mixin svg-icon-color($color) {
+  svg {
+    [fill]:not(.permanent):not(g) {
+      transition: fill 0.2s ease;
+      fill: $color;
+    }
+
+    // &:hover {
+    //   [fill]:not(.permanent):not(g) {
+    //     transition: fill 0.3s ease;
+    //   }
+    // }
+  }
+}
+
+@mixin svg-icon-transition() {
+  svg {
+    [fill]:not(g) {
+      transition: fill 0.3s ease;
+    }
+  }
+}
+
+@mixin svg-icon-size($size) {
+  svg {
+    height: $size;
+    width: $size;
+  }
+}
+@mixin svg-icon-hover($color) {
+  svg:hover {
+    [fill]:not(.permanent):not(g) {
+      transition: fill 0.2s ease;
+      fill: $color;
+    }
+  }
+}

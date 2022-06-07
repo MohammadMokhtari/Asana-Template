@@ -1,0 +1,163 @@
+.Shopping_cart_item_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+  }
+}
+.Shopping_cart_item_description {
+  text-align: right;
+  ul {
+    li {
+      padding: 5px;
+    }
+  }
+  h4 {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  span del {
+    font-size: 14px;
+    color: rgb(117, 117, 117);
+  }
+}
+.Shc_inner {
+  padding: 2px;
+
+  h6 {
+    font-size: 11px;
+    color: rgb(92, 92, 92);
+    > i {
+      font-size: 20px;
+      position: relative;
+      top: 5px;
+      margin-left: 5px;
+    }
+  }
+  select {
+    width: 25%;
+    border: none;
+    color: rgb(117, 117, 117);
+    font-size: 13px;
+    option {
+      cursor: pointer;
+      color: rgb(117, 117, 117);
+    }
+  }
+  .Shc_option {
+    display: inline-block;
+    margin-right: auto;
+    width: 70%;
+    text-align: left;
+    > button {
+      border: none;
+      background-color: transparent;
+      padding: 5px;
+      margin-right: 10px;
+      color: rgb(117, 117, 117);
+      @include fontsize(11px);
+      &:focus {
+        border: none;
+        outline: none;
+      }
+      &:hover {
+        color: $danger-color;
+
+        i {
+          color: $danger-color;
+        }
+      }
+      > i {
+        @include fontsize(18px);
+        color: rgb(117, 117, 117);
+        margin-right: 4px;
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
+  > i {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    margin-left: 5px;
+  }
+  span {
+    font-size: 13px;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.Shc_item_price {
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  small {
+    color: #ef394e;
+    font-weight: 600;
+    font-size: 12px;
+  }
+}
+
+.shopping_cart_summery {
+  padding: 8px 5px;
+  border-radius: 15px;
+  height: 50%;
+  border-bottom: 1px dashed #dfdfdf;
+  .shopping_cart_checkout {
+    width: 100%;
+    height: 100%;
+    li {
+      width: 100%;
+      text-align: right;
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0px;
+      padding: 4px;
+      color: $text-color;
+      .bill_title {
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .bill_price {
+        font-size: 12px;
+      }
+    }
+  }
+}
+.Shopping_cart_item {
+  margin-bottom: 20px;
+  @include box-shadow(0 1px 1px 0 rgba(211, 211, 211, 0.6));
+  border-bottom: 1px dashed #dfdfdf;
+
+  @include media-breakpoint-down(sm) {
+    padding: 10px 20px;
+  }
+}
+
+.shoping_cart_total {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.shoping_cart_checkout {
+  &_btn {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: $Accent-color;
+    color: $white-color;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px;
+    @include border-radius(15px);
+    position: relative;
+  }
+}

@@ -1,0 +1,96 @@
+.icon-svg-sm {
+  cursor: pointer;
+  @include svg-icon-size(20px);
+  @include svg-icon-hover($Primary-color);
+}
+
+.icon-svg-md {
+  cursor: pointer;
+  @include svg-icon-size(30px);
+  @include svg-icon-hover($Primary-color);
+}
+
+.icon-svg-lg {
+  cursor: pointer;
+  @include svg-icon-size(45px);
+}
+
+.icon-svg {
+  cursor: pointer;
+  @include svg-icon-color(#838383);
+  @include svg-icon-size(28px);
+  // @include svg-icon-hover($Primary-color);
+}
+
+.icon-svg-social {
+  @include svg-icon-size(28px);
+}
+
+.icon-menu-svg {
+  @include svg-icon-size(20px);
+  @include svg-icon-color(#707070);
+  position: relative;
+  top: 7px;
+  margin-left: 3px;
+}
+
+.icon-svg-primary {
+  @include svg-icon-color($Primary-color);
+}
+
+.svg-icon-warning {
+  @include svg-icon-color($warning-color);
+}
+
+.svg-icon-danger {
+  @include svg-icon-color($danger-color);
+}
+
+.svg-icon-success {
+  @include svg-icon-color($success-color);
+  @include svg-icon-size(22px);
+}
+
+.icon-xs {
+  font-size: 15px;
+}
+
+.icon-sm {
+  font-size: 20px;
+}
+
+.icon-md {
+  font-size: 27px;
+}
+
+.icon-lg {
+  font-size: 30px;
+}
+
+.icon-c {
+  position: relative;
+  top: 7px;
+}
+
+.icon-3c {
+  position: relative;
+  top: 3px;
+}
+
+.icon-4c {
+  position: relative;
+  top: 4px;
+}
+
+.icon-close {
+  cursor: pointer;
+}
+
+// Icons Base Styles
+.icon-success {
+  color: $success-color;
+}
+
+.icon-danger {
+  color: $danger-color;
+}

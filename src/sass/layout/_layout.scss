@@ -1,0 +1,24 @@
+body {
+  background-color: $body-color-defualt;
+  direction: rtl;
+  height: 100vh;
+}
+
+.content {
+  padding: 10px 0;
+}
+.wrapper {
+  padding-right: 0px;
+  transition: all 0.3s ease;
+  z-index: 100;
+  @include media-breakpoint-up(lg) {
+    padding-right: 285px;
+  }
+}
+.wrapper.fix {
+  padding-right: 0px;
+  transition: all 0.3s ease;
+  @include media-breakpoint-up(lg) {
+    padding-right: 75px;
+  }
+}

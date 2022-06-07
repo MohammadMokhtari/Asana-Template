@@ -1,0 +1,135 @@
+.client_form {
+  padding: 5px 0;
+  position: relative;
+  .inner {
+    width: 70%;
+    margin: auto;
+    padding: 0px;
+    @include box-shadow(0 1px 8px 0 #9b9b9bc2);
+    @include border-radius(20px);
+    position: relative;
+    background-color: #fff;
+    @include media-breakpoint-up(sm) {
+      padding: 30px 0px;
+      width: 450px;
+      min-height: 470px;
+    }
+
+    &_logo {
+      border-bottom: 0.5px solid $Divider-color;
+      h2 {
+        color: #1e2f38;
+        text-align: center;
+        font-size: 26px;
+        margin: 45px 0;
+        font-weight: 600;
+        text-decoration: underline;
+        text-decoration-color: $Primary-color;
+
+        @include media-breakpoint-up(lg) {
+          font-size: 32px;
+        }
+      }
+    }
+    form {
+      padding: 0px 25px;
+      text-align: center;
+      > h2 {
+        text-align: center;
+        font-size: 14px;
+        color: #1e2f38;
+        font-family: YekanBold;
+        @include media-breakpoint-up(lg) {
+          font-size: 19px;
+        }
+      }
+      > p {
+        color: #686e71;
+        font-size: 11px;
+        margin: 15px 0;
+        @include media-breakpoint-up(lg) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+.input_element {
+  position: relative;
+  margin: 12px 0px;
+  input {
+    padding: 14px 35px;
+    color: $text_color;
+    font-size: 13px;
+    border: 0.5px solid $Divider-color;
+    outline: none;
+    width: 100%;
+    transition: all 0.1s ease-in;
+    margin: 5px 0;
+    border-radius: 12px;
+    &::placeholder {
+      font-size: 11px;
+      color: #686e71;
+    }
+    &:focus {
+      border-color: $Primary-color;
+    }
+  }
+  i {
+    position: absolute;
+    color: $Divider-color;
+    top: 18px;
+    right: 9px;
+    font-size: 20px;
+  }
+}
+.checkbbox_remember {
+  text-align: right;
+  padding: 15px 5px;
+  label {
+    font-size: 13px;
+  }
+}
+.login_btn {
+  text-align: left;
+  button {
+    padding: 8px 30px;
+    color: $white_color;
+    outline: none;
+    border: none;
+    background-color: $Primary-color;
+    border-radius: 15px;
+    font-size: 12px;
+    &:hover {
+      background-color: $light-Primary-color;
+    }
+  }
+}
+
+.other_ways_inside {
+  margin: 15px 0px;
+  a {
+    position: relative;
+    width: 100%;
+    font-size: 24px;
+  }
+}
+.other_link {
+  text-align: right;
+  a {
+    display: block;
+    width: 100%;
+    font-size: 11px;
+    > i {
+      margin-left: 3px;
+    }
+  }
+}
+.inner_logo {
+  .logo-img {
+    height: 125px;
+  }
+  .auth-img {
+    height: 150px;
+  }
+}

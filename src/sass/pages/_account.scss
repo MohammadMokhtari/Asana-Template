@@ -1,0 +1,344 @@
+.account_dashboard {
+  padding: 0px;
+  min-height: 80vh;
+  border: 1px solid #d6d5d59a;
+  .headline {
+    padding: 30px 15px 10px 15px;
+    border-bottom: 1px solid #d6d5d59a;
+    border-radius: 15px;
+    width: 100%;
+    img {
+      width: 110px;
+      height: 110px;
+      border-radius: 25px;
+    }
+
+    .profile__info {
+      padding-right: 15px;
+      .profile__info_wallet_balance {
+        margin-bottom: 10px;
+        text-align: right;
+
+        padding: 0px 5px;
+        span {
+          font-size: 12px;
+          font-weight: 400;
+          color: $text-color;
+        }
+        small {
+          display: block;
+          font-size: 13px;
+          font-family: YekanBold;
+          margin: 10px 0;
+          color: $Primary-color;
+          > span {
+            font-size: 10px;
+            font-family: YekanBold;
+          }
+        }
+      }
+      .profile__info_score {
+        @extend .profile__info_wallet_balance;
+        border-bottom: 0.5px solid $Divider-color;
+        .profile__info_score_num {
+          display: block;
+          font-size: 14px;
+          font-family: YekanBold;
+        }
+      }
+    }
+  }
+  .access_menu {
+    padding: 10px;
+    > ul {
+      text-align: right;
+      li {
+        position: relative;
+        padding: 10px 3px 10px 3px;
+        cursor: pointer;
+        &:hover {
+          a {
+            color: $Primary-color;
+          }
+        }
+        a {
+          color: $text-color;
+          font-size: 13px;
+          font-weight: 500;
+          > i {
+            position: relative;
+            top: 5px;
+            font-size: 20px;
+            margin: 0 5px 0 8px;
+          }
+        }
+      }
+      li.active {
+        a {
+          color: $Primary-color;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+.user_edit {
+  background-color: $white-color;
+  padding: 10px;
+  border-radius: 15px;
+}
+.user_information {
+  padding: 15px;
+}
+.user_information_bodey {
+  padding: 25px 0px;
+}
+
+.acount_title {
+  padding: 20px;
+  text-align: right;
+  h3 {
+    text-align: right;
+    font-size: 13px;
+    color: $text_color;
+    display: inline;
+    > i {
+      position: relative;
+      top: 6px;
+      font-size: 23px;
+    }
+  }
+}
+.input_layer_info {
+  margin: 0px;
+}
+.input_layer {
+  position: relative;
+  height: 100%;
+  .input_laye_icon {
+    position: relative;
+    top: 27px;
+    margin: 0 5px;
+    font-size: 18px;
+    z-index: 400;
+    color: $Divider-color;
+  }
+  label {
+    font-size: 12px;
+    color: #303030a2;
+    position: absolute;
+    top: 27px;
+    right: 30px;
+    z-index: 400;
+    background-color: $white-color;
+    @include transition(all 0.2s ease-in-out);
+    > span {
+      color: $text_color;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+  input[type='text'],
+  input[type='email'] {
+    display: block;
+    width: 100%;
+    border: 0.4px solid #cacaca83;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 13px;
+    height: 40px;
+    &:focus {
+      border: 1px solid $light-Primary-color;
+    }
+    &:focus + label {
+      color: $light-Primary-color;
+    }
+  }
+  textarea {
+    @extend input[type='text'];
+    height: 250px;
+  }
+}
+
+.Chage_wallet {
+  padding: 10px;
+  p {
+    text-align: right;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  > form {
+    padding: 10px;
+  }
+}
+
+.input_layer_address {
+  position: relative;
+  top: 10px;
+  > i {
+    font-size: 18px;
+    color: $Divider-color;
+    position: relative;
+    top: 3px;
+  }
+  > label {
+    font-size: 12px;
+    color: #303030a2;
+    cursor: pointer;
+    > i {
+      position: relative;
+      top: 8px;
+      right: -5px;
+      color: #303030a2;
+    }
+  }
+}
+.input_layer_address_detail {
+  padding: 10px;
+  .input_layer_address_details {
+    > i {
+      position: relative;
+      top: 5px;
+      font-size: 18px;
+      color: $Divider-color;
+    }
+    > label {
+      margin: 0px 10px;
+      font-size: 14px;
+      color: #303030a2;
+    }
+    > select {
+      width: 70%;
+      padding: 3px 25px;
+      font-size: 14px;
+      outline: none;
+      border: 0.5px solid $Divider-color;
+      border-radius: 10px;
+      color: #303030a2;
+      cursor: pointer;
+      option {
+        border: 0.5px solid $Divider-color;
+        outline: none;
+        font-size: 14px;
+        color: #303030a2;
+        &:hover {
+          background-color: $Primary-color;
+        }
+      }
+    }
+  }
+}
+.form-check-label {
+  position: relative;
+  right: 20px;
+  color: #303030a2;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.input_layer_gender {
+  border: 0.5px solid #92929283;
+  padding: 10px 15px;
+  border-radius: 12px;
+  margin: 15px 0 15px 0;
+  > span {
+    font-size: 12px;
+    color: #303030a2;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    background-color: $white-color;
+  }
+}
+.input_layer_addresss {
+  padding: 4px 15px;
+
+  p {
+    font-size: 13px;
+    display: inline;
+  }
+  i {
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+    &:hover {
+      color: $Primary-color;
+    }
+  }
+  .inner_input_layer_addresss {
+    position: relative;
+    .input_layer_addresss_option {
+      display: none;
+      justify-content: space-around;
+      position: absolute;
+      top: 0px;
+      right: 28px;
+      width: 210px;
+      background-color: $white-color;
+      border-radius: 15px;
+      @include box-shadow(0 2px 3px 0 rgba(0, 0, 0, 0.3));
+      z-index: 600;
+      padding: 10px 10px;
+      a {
+        font-size: 12px;
+        color: $text-color;
+        &:hover {
+          color: $Primary-color;
+          i {
+            color: $Primary-color;
+          }
+        }
+      }
+      i {
+        font-size: 16px;
+        top: 5px;
+        position: relative;
+      }
+    }
+  }
+}
+.inpute_layer_btn {
+  margin: 20px;
+  > button {
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    background-color: transparent;
+    font-size: 11px;
+    border: 0.5px solid $Divider-color;
+    border-radius: 12px;
+    &:hover {
+      border-color: $Primary-color;
+    }
+    > i {
+      position: relative;
+      top: 4px;
+      font-size: 15px;
+    }
+  }
+}
+
+.user-details {
+  &-name {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  &-item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &-opt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+    }
+    &-span {
+      font-size: 13px;
+      font-weight: 600;
+      display: block;
+    }
+  }
+}

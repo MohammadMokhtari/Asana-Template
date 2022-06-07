@@ -1,0 +1,87 @@
+.re-modal-wrapper.visible {
+  opacity: 1;
+  transform: none;
+  @include transition(all 0.3s ease);
+}
+.re-modal-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 1000;
+  background-color: rgba(0, 0, 0, 0.411);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  opacity: 0;
+  transform: scale(1.1, 1.1);
+  @include transition(all 0.2s ease-in-out);
+}
+
+.re-modal {
+  max-width: 1000px;
+  width: auto;
+  padding: 5px 10px;
+  position: relative;
+  background-color: #fff;
+  @include border-radius(5px);
+  &-header {
+    width: 100%;
+    padding: 10px 15px;
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    border-bottom: 1px solid rgba(88, 88, 88, 0.192);
+    &-title {
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .close-modal-btn {
+      cursor: pointer;
+      > i {
+        color: black;
+        font-size: 20px;
+        &:hover {
+          color: $danger-color;
+        }
+      }
+    }
+  }
+  &-bottom {
+    padding: 15px;
+    #modal-location-user-address {
+      li {
+        text-align: right;
+        font-size: 14px;
+      }
+    }
+  }
+  .re-modal-content {
+    overflow: hidden;
+    @include media-breakpoint-up(lg) {
+      max-width: 1200px;
+      max-height: 90vh;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 700px;
+      max-height: 90vh;
+    }
+    @include media-breakpoint-down(sm) {
+      max-width: 500px;
+      max-height: 90vh;
+    }
+    @include media-breakpoint-down(xs) {
+      max-width: 400px;
+      max-height: 90vh;
+    }
+    &-body {
+      border-bottom: 0.5px solid #80808028;
+    }
+    &-option {
+      text-align: right;
+      padding: 10px 25px;
+    }
+  }
+}

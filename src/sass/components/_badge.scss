@@ -1,0 +1,40 @@
+.badge {
+  display: block;
+  // padding: 6px 12px;
+  padding: 10px 12px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 10px;
+}
+.badge-md {
+  @extend .badge;
+  font-size: 12px;
+}
+.badge-light {
+  color: #7e8299;
+  background-color: #f5f8fa;
+}
+.badge-light-succsess {
+  color: $success-color;
+  background-color: #e8fff3;
+}
+.badge-light-danger {
+  color: $danger-color;
+  background-color: #fff5f8;
+}
+.badge-light-primary {
+  color: $Primary-color;
+  background-color: #f1faff;
+}
+.badge-light-accent {
+  color: $Accent-color;
+  background-color: #dcfdfd;
+}
+.badge-light-info {
+  color: #366cf9;
+  background-color: #f1f5ff;
+}

@@ -1,0 +1,8 @@
+@function calculateRem($size) {
+  $remsize: $size / 16px;
+  @return #{$remsize}rem;
+}
+
+@function font-size($size-name) {
+  @return map-get($font-size, $size-name);
+}
