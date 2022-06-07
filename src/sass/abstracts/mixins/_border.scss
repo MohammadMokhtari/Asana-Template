@@ -1,0 +1,26 @@
+// border radius
+@mixin border-radius($man) {
+  -webkit-border-radius: $man;
+  -moz-border-radius: $man;
+  border-radius: $man;
+}
+@mixin border-top-left-radius($man) {
+  -webkit-border-top-left-radius: $man;
+  -moz-border-top-left-radius: $man;
+  border-top-left-radius: $man;
+}
+@mixin border-top-right-radius($man) {
+  -webkit-border-top-right-radius: $man;
+  -moz-border-top-right-radius: $man;
+  border-top-right-radius: $man;
+}
+@mixin border-bottom-left-radius($man) {
+  -webkit-border-bottom-left-radius: $man;
+  -moz-border-bottom-left-radius: $man;
+  border-bottom-left-radius: $man;
+}
+@mixin border-bottom-right-radius($man) {
+  -webkit-border-bottom-right-radius: $man;
+  -moz-border-bottom-right-radius: $man;
+  border-bottom-right-radius: $man;
+}

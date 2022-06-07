@@ -1,0 +1,44 @@
+//import abstracts
+@import './abstracts/variables';
+@import './abstracts/functions';
+@import './abstracts/typography';
+@import './abstracts/mixins';
+
+// import vendors(plugins)
+@import './vendors/bootstrap';
+@import './vendors/simplebar';
+@import './vendors/swiper';
+
+// import base
+@import './base/reset';
+@import './base/fonte-face';
+@import './base/base';
+@import './base/icon';
+
+// import layout
+@import './layout/layout';
+@import './layout/aside';
+@import './layout/header';
+@import './layout/navbar';
+@import './layout/headershoppingCart';
+@import './layout/Site-section';
+@import './layout/feature-home';
+@import './layout/footer';
+
+// import components
+@import './components/forms';
+@import './components/table';
+@import './components/card';
+@import './components/modal';
+@import './components/buttons';
+@import './components/list-group.scss';
+@import './components/dropdown';
+@import './components/badge';
+@import './components/alert';
+
+//import pages
+@import './pages/account';
+@import './pages/auth';
+@import './pages/product-details';
+@import './pages/Products-list';
+@import './pages/ShoppingCart';

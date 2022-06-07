@@ -1,0 +1,14 @@
+// bootstrap initializaton
+@import 'bootstrap-v4-rtl/scss/functions';
+@import 'bootstrap-v4-rtl/scss/mixins';
+@import 'bootstrap-v4-rtl/scss/variables';
+@import 'bootstrap-v4-rtl/scss/utilities';
+//
+@import 'bootstrap-v4-rtl/scss/type';
+@import 'bootstrap-v4-rtl/scss/transitions';
+@import 'bootstrap-v4-rtl/scss/tables';
+
+// import bootstrap components
+@import 'bootstrap-v4-rtl/scss/grid';
+@import 'bootstrap-v4-rtl/scss/card';
+@import 'bootstrap-v4-rtl/scss/tooltip';

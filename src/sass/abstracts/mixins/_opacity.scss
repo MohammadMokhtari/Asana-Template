@@ -1,0 +1,9 @@
+//  opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  -moz-opacity: $opacity;
+  /* for safari 1.x */
+  -khtml-opacity: $opacity;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}

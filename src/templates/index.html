@@ -1,0 +1,3186 @@
+<!DOCTYPE html>
+<!--
+Author: Mohammad Mokhtari
+Product Name:admin template 
+Contact: dev.mohammadmokhtari@gmail.com
+github: https://github.com/MohammadMokhtari
+Linkedin:https://www.linkedin.com/in/mohammad-mokhtari-8a668122b/
+Follow:https://instagram.com/mohammadmokhtari8
+-->
+<html lang="en">
+<!--begin :: head-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="icon" type="image/x-icon" href="./media/images/logo/logo-blue.png"> -->
+  <title>فروشگاه اینترنتی آسـانـا</title>
+  <!--begin :: google icon -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <!--end :: google icon -->
+</head>
+<!--end :: head-->
+
+<body>
+
+  <!--start :: header-->
+  <header class="main_header">
+    <section class="header_section">
+
+      <!--start :: headerTop-->
+      <div class="header_section_top">
+        <div class="site_logo">
+          <a href="index.html">
+            <img src="assets/images/logo/logo-blue.png" alt="">
+          </a>
+        </div>
+        <div class="search">
+          <form action="">
+            <input id="Search_site_input" type="text" name="" id="" placeholder="جستجو در آسانا  ... ">
+            <button type="submit"> <i class="material-icons md-dark ">search</i>
+            </button>
+          </form>
+          <div class="search_resulte">
+            <div class="search_resulte_recent_key">
+              <small>جستجو های اخیر : </small>
+              <ul>
+                <template id="sreach-recent-key">
+                  <li><i class="material-icons">access_time</i><a href=""></a>
+                  </li>
+                </template>
+              </ul>
+            </div>
+            <ul class="search_resulte_menu">
+              <li>لوازم ورزشی
+                <ul class="search_resulte_submenu">
+                  <li><a href="">کفش وزشی استوک دار</a></li>
+                  <li><a href="">لوکه پشتی کانر پیلار</a></li>
+                  <li><a href="">کارت گرافیک</a></li>
+                </ul>
+              </li>
+              <li>لوازم دیجیتال
+                <ul class="search_resulte_submenu">
+                  <li><a href="">موبایل سامسونگ گلکسی</a></li>
+                  <li><a href="">لپ تاب Asuse</a></li>
+                  <li><a href="">کارت گرافیک</a></li>
+                </ul>
+              </li>
+              <li>لوازم آشپزخانه</li>
+            </ul>
+          </div>
+        </div>
+        <div class="user_area">
+          <!-- <div class="logged_out">
+                          <i class="icon-sign-in"></i>
+                          <a href="login.html">ورود</a>
+                          <span>/</span>
+                          <a href="signup.html">ثبت نام</a>
+                     </div>  -->
+          <div class="logged_in">
+            <div class="logged_in_item_f">
+              <a class="title">
+                <i class="material-icons-outlined">admin_panel_settings
+                </i>
+                پنل مدیریت
+              </a>
+            </div>
+            <div class="logged_in_item_s dropdown__container">
+              <a class="title dropdown__btn ">
+                <i class="material-icons md-dark">expand_more</i> محمد مختاری
+              </a>
+              <div class=" sublayer shadow-box dropdown__menu">
+                <div class="user_wallet ">
+                  <div class="user_wallet_Account_balance">
+                    <i class="material-icons-outlined icon-sm icon-3c">account_balance_wallet</i>
+                    <span> موجودی شما:</span>
+                    <span> 220/000 تومان</span>
+                  </div>
+                  <div class="user_wallet_score">
+                    <i class="material-icons-outlined icon-sm icon-3c c-gold">star</i>
+                    <span> امتیاز شما:</span>
+                    <span> 50</span>
+                  </div>
+                </div>
+                <div class="sublayer_menu">
+                  <ul>
+                    <li>
+                      <i class="material-icons-outlined">account_circle</i>
+                      <a href="#">مشاهده حساب کاربری</a>
+                    </li>
+                    <li>
+                      <i class="material-icons-outlined">edit</i>
+                      <a href="#">ویرایش حساب کاربری</a>
+                    </li>
+                    <li>
+                      <i class="material-icons-outlined">account_balance_wallet</i>
+                      <a href="#">کیف پول</a>
+                    </li>
+                    <li>
+                      <i class="material-icons-outlined">assignment</i>
+                      <a href="#">سفارش های من</a>
+                    </li>
+                    <li>
+                      <i class="material-icons-outlined">logout</i>
+                      <a href="#">خروج از حساب کاربری</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="logged_in_item ">
+              <a href="Account.html" class="img-layer">
+                <img src="./assets/images/Avatar/150-26.jpg" alt="" title="مشاهده حساب کاربری">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end :: headerTop-->
+
+      <!--start :: headerBotttom-->
+      <div class="header_section_bottom shadow-box">
+        <div class="nav_bar">
+          <nav class="site_navigation">
+            <div class="btn_nav aside-mobile-toggle">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <!--Main menu-->
+            <ul class="site_menu">
+              <li class="menu_item">
+                <a class="menu_link">
+                  <!-- <i class="material-icons-outlined icon-sm">menu</i> -->
+                  <span class="icon-menu-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                      height="24px" viewBox="0 0 24 24" version="1.1">
+                      <g id="Stockholm-icons-/-Text-/-Menu" stroke="none" stroke-width="1" fill="none"
+                        fill-rule="evenodd">
+                        <rect id="bound" x="0" y="0" width="24" height="24" />
+                        <rect id="Rectangle-20" fill="#000000" x="4" y="5" width="16" height="3" rx="1.5" />
+                        <path
+                          d="M5.5,15 L18.5,15 C19.3284271,15 20,15.6715729 20,16.5 C20,17.3284271 19.3284271,18 18.5,18 L5.5,18 C4.67157288,18 4,17.3284271 4,16.5 C4,15.6715729 4.67157288,15 5.5,15 Z M5.5,10 L18.5,10 C19.3284271,10 20,10.6715729 20,11.5 C20,12.3284271 19.3284271,13 18.5,13 L5.5,13 C4.67157288,13 4,12.3284271 4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z"
+                          id="Combined-Shape" fill="#000000" opacity="1" />
+                      </g>
+                    </svg>
+                  </span>
+                  دسته بندی محصولات
+                </a>
+                <div class="sub_menu_div_back">
+                  <div class="sub_menu_div" id="sub-menu-div">
+                    <ul class="sub_menu">
+                      <li class="sub_menu_item">
+                        <a href="Product_list2.html" class="sub_menu_link">
+                          <img src="./assets/images/icons/icons8-headphones-50.png" alt=""> کالای دیجیتال
+                        </a>
+                        <div id="first_sub_menu_item_divi" class="sub_menu_item_divi">
+                          <div class=" h-100 sub_menu_item_divi_row">
+                            <div class="sub_menu_item_divi_left">
+                              <ul class="sub_categori">
+                                <li>
+                                  <h4>
+                                    <a href="product-list.html">
+                                      گوشی موبایل <i class="material-icons icon-sm">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">سامسونگ</a>
+                                    </li>
+                                    <li><a href="">هواوی</a>
+                                    </li>
+                                    <li><a href="">الجی</a>
+                                    </li>
+                                    <li><a href="">اپل</a>
+                                    </li>
+                                    <li><a href="">هواوی</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">لوازم جانبی
+                                      موبایل <i class="material-icons icon-sm">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">شارژر</a>
+                                    </li>
+                                    <li><a href="">قاب
+                                        گوشی</a>
+                                    </li>
+                                    <li><a href="">پایه نگه
+                                        دارنده</a>
+                                    </li>
+                                    <li><a href="">پاور
+                                        بانک</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">واقعیت مجازی
+                                      <!-- <i class="material-icons icon-sm">arrow_drop_down</i> -->
+                                    </a>
+                                  </h4>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">قطعات کامپیوتر
+                                      <i class="material-icons icon-sm">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">پردازنده</a>
+                                    </li>
+                                    <li><a href="">کارت
+                                        گرافیک</a>
+                                    </li>
+                                    <li><a href="">کارت
+                                        حافظه</a>
+                                    </li>
+                                    <li><a href="">مادبرد</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">لپ تاب
+                                      <i class="material-icons icon-sm">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">سامسونگ</a>
+                                    </li>
+                                    <li><a href="">هواوی</a>
+                                    </li>
+                                    <li><a href="">ایسوس</a>
+                                    <li><a href="">اپ چی</a>
+                                    <li><a href="">دل</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">هدفون وهدست
+                                    </a>
+                                  </h4>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sub_menu_item">
+                        <a class="sub_menu_link">
+                          <img src="./assets/images/icons/icons8-track-and-field-50.png" alt=""> ورزش و سفر
+                        </a>
+                        <div class="sub_menu_item_divi">
+                          <div class=" h-100 sub_menu_item_divi_row">
+                            <div class="sub_menu_item_divi_left">
+                              <ul class="sub_categori">
+                                <li>
+                                  <h4>
+                                    <a href="Products_list.html">
+                                      کفش ورزشی
+                                      <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">کفش ورزشی
+                                        زنانه</a>
+                                    </li>
+                                    <li><a href="">کفش ورزشی
+                                        مردانه</a>
+                                    </li>
+                                    <li><a href="">کفش ورزشی
+                                        بچه
+                                        گانه</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">پوشاک ورزشی
+                                      مردانه
+                                      <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">کفش ورزشی
+                                        مردانه</a>
+                                    </li>
+                                    <li><a href="">کفش ورزشی
+                                        مردانه</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">پوشاک ورزشی
+                                      زنانه
+                                      <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">کوهنوردی <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">جوراب ورزشی <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">جوراب
+                                        ورزشی
+                                        مردانه</a></li>
+                                    <li><a href="">جوراب
+                                        ورزشی
+                                        مردانه</a></li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">ساک ورزشی <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sub_menu_item">
+                        <a href="" class="sub_menu_link">
+                          <img src="./assets/images/icons/icons8-chainsaw-50.png" alt="">
+                          خودرو و ابزارالات صنعتی
+                        </a>
+                        <div class="sub_menu_item_divi">
+                          <div class="h-100 sub_menu_item_divi_row">
+                            <div class="sub_menu_item_divi_left">
+                              <ul class="sub_categori">
+                                <li>
+                                  <h4>
+                                    <a href="Products_list.html">
+                                      لوازم جانبی موتور
+                                      سیکلت
+                                      <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">لوازم
+                                        تصویری</a>
+                                    </li>
+                                    <li><a href="">لوازم
+                                        جانبی</a>
+                                    </li>
+                                    <li><a href="">لوازم
+                                        نگهداری</a>
+                                    </li>
+                                  </ul>
+
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">لوازم جانبی
+                                      خودرو
+                                      <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">لوازم صوتی
+                                        و
+                                        تصویری</a></li>
+                                    <li><a href="">لوازم
+                                        جانبی</a>
+                                    </li>
+                                    <li><a href="">جلو بندی و
+                                        تعلیق</a>
+                                    <li><a href="">تسمه
+                                        خودرو</a>
+                                    <li><a href="">کمک
+                                        فنر</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">ابزار برقی <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">ابزار غیر برقی
+                                      <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">لوازم باغبانی
+                                      <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+
+                                <li>
+                                  <h4>
+                                    <a href="">نور و روشنایی
+                                      <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+                              </ul>
+                            </div>
+
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sub_menu_item">
+                        <a href="" class="sub_menu_link">
+                          <img src="./assets/images/icons/icons8-red-purse-50.png" alt="">
+                          مد و پوشاک
+                        </a>
+                        <div class="sub_menu_item_divi">
+                          <div class="h-100 sub_menu_item_divi_row">
+                            <div class="sub_menu_item_divi_left">
+                              <ul class="sub_categori">
+                                <li>
+                                  <h4>
+                                    <a href="Products_list.html">
+                                      زنانه <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">کفش
+                                        زنانه</a>
+                                    </li>
+                                    <li><a href="">مانتو
+                                        زنانه</a>
+                                    </li>
+                                    <li><a href="">تی شرت و
+                                        پلوشرت</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">مردانه <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">کفش
+                                        مردانه</a>
+                                    </li>
+                                    <li><a href="">کت و شلوار
+                                        مردانه</a></li>
+                                    <li><a href="">تی شرت
+                                      </a>
+                                    <li><a href="">پیراهن</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">بچه گانه <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">کفش بچه
+                                        دخترانه</a>
+                                    </li>
+                                    <li><a href="">کفش بچه
+                                        پسرانه</a>
+                                    </li>
+                                    <li><a href="">نوزاد</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">اکسسوری مردانه
+                                      <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">اکسسوری زنانه
+                                      <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">لباس ورزشی <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+                              </ul>
+                            </div>
+
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sub_menu_item">
+                        <a href="" class="sub_menu_link">
+                          <img src="./assets/images/icons/icons8-romance-50 (1).png" alt=""> زیبایی و سلامت
+                        </a>
+                        <div class="sub_menu_item_divi">
+                          <div class="row h-100 sub_menu_item_divi_row">
+                            <div class="sub_menu_item_divi_left">
+                              <ul class="sub_categori">
+                                <li>
+                                  <h4>
+                                    <a href="Products_list.html">
+                                      شلوار <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">کفش ورزشی
+                                        زنانه</a>
+                                    </li>
+                                    <li><a href="">کفش ورزشی
+                                        مردانه</a>
+                                    </li>
+                                    <li><a href="">کفش ورزشی
+                                        بچه
+                                        گانه</a>
+                                    </li>
+                                  </ul>
+
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">کوله پشتی <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">لباس ورزشی <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">شرت ورزشی <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">جرواب ورزشی <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+
+                                <li>
+                                  <h4>
+                                    <a href="">لباس ورزشی <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sub_menu_item">
+                        <a href="" class="sub_menu_link">
+                          <img src="./assets/images/icons/icons8-book-stack-50.png" alt=""> کتاب و لوازم
+                          تحریر و هنر
+                        </a>
+                        <div class="sub_menu_item_divi">
+                          <div class="h-100 sub_menu_item_divi_row">
+                            <div class="sub_menu_item_divi_left">
+                              <ul class="sub_categori">
+                                <li>
+                                  <h4>
+                                    <a href="Products_list.html">
+                                      کتاب و مجله
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li><a href="">کتاب های
+                                        چاپی</a>
+                                    </li>
+                                    <li><a href="">کجلات
+                                        خارجی</a>
+                                    </li>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sub_menu_item">
+                        <a class="sub_menu_link">
+                          <img src="./assets/images/icons/icons8-babys-room-50.png" alt=""> اسباب بازی کودک
+                          و نوزاد
+                        </a>
+                        <div class="sub_menu_item_divi">
+                          <div class="h-100 sub_menu_item_divi_row">
+                            <div class="sub_menu_item_divi_left">
+                              <ul class="sub_categori">
+                                <li>
+                                  <h4>
+                                    <a href="Products_list.html">
+                                      غذاخوری <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li>
+                                      <a href="">شیشه
+                                        شیر,سرلاک,داروخوری</a>
+                                    </li>
+                                    <li>
+                                      <a href="">صندلی غذا
+                                        خوری</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">بازی و سرگرمی
+                                      کودک <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li>
+                                      <a href="">ماشین
+                                        بازی,
+                                        موتور,سه
+                                        چرخه</a>
+                                    </li>
+                                    <li>
+                                      <a href="">تاب و
+                                        سرسره</a>
+                                    </li>
+                                    <li>
+                                      <a href="">دوچرخه</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">لوازم شخصی <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li>
+                                      <a href="">شورت
+                                        آموزشی</a>
+                                    </li>
+                                    <li>
+                                      <a href="">شیردوش</a>
+                                    </li>
+                                    <li>
+                                      <a href="">پستانک و
+                                        ملزومات</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">بهداشت و حمام
+                                      کودک
+                                      و
+                                      نوزاد <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li>
+                                      <a href="">حوله
+                                        حمام</a>
+                                    </li>
+                                    <li>
+                                      <a href="">مینی
+                                        واش</a>
+                                    </li>
+                                    <li>
+                                      <a href="">دستمال
+                                        مرطوب</a>
+                                    </li>
+                                    <li>
+                                      <a href="">شامپو
+                                        کودک و
+                                        نوزاد</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">Ps4 ,Xbox <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sub_menu_item">
+                        <a class="sub_menu_link">
+                          <img src="./assets/images/icons/icons8-street-food-50.png" alt=""> خوردنی و
+                          آشامیدنی
+                        </a>
+                        <div class="sub_menu_item_divi">
+                          <div class="h-100 sub_menu_item_divi_row">
+                            <div class="sub_menu_item_divi_left">
+                              <ul class="sub_categori">
+                                <li>
+                                  <h4>
+                                    <a href="Products_list.html">
+                                      غذاخوری <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li>
+                                      <a href="">شیشه
+                                        شیر,سرلاک,داروخوری</a>
+                                    </li>
+                                    <li>
+                                      <a href="">صندلی غذا
+                                        خوری</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">بازی و سرگرمی
+                                      کودک <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li>
+                                      <a href="">ماشین
+                                        بازی,
+                                        موتور,سه
+                                        چرخه</a>
+                                    </li>
+                                    <li>
+                                      <a href="">تاب و
+                                        سرسره</a>
+                                    </li>
+                                    <li>
+                                      <a href="">دوچرخه</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">لوازم شخصی <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li>
+                                      <a href="">شورت
+                                        آموزشی</a>
+                                    </li>
+                                    <li>
+                                      <a href="">شیردوش</a>
+                                    </li>
+                                    <li>
+                                      <a href="">پستانک و
+                                        ملزومات</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">بهداشت و حمام
+                                      کودک
+                                      و
+                                      نوزاد <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                  <ul class="inner_categori">
+                                    <li>
+                                      <a href="">حوله
+                                        حمام</a>
+                                    </li>
+                                    <li>
+                                      <a href="">مینی
+                                        واش</a>
+                                    </li>
+                                    <li>
+                                      <a href="">دستمال
+                                        مرطوب</a>
+                                    </li>
+                                    <li>
+                                      <a href="">شامپو
+                                        کودک و
+                                        نوزاد</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="">Ps4 ,Xbox <i class="material-icons">arrow_drop_down</i></a>
+                                  </h4>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link">
+                  <span class="icon-menu-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                      height="24px" viewBox="0 0 24 24" version="1.1">
+                      <g id="Stockholm-icons-/-General-/-Fire" stroke="none" stroke-width="1" fill="none"
+                        fill-rule="evenodd">
+                        <rect id="bound" x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M14,7 C13.6666667,10.3333333 12.6666667,12.1167764 11,12.3503292 C11,12.3503292 12.5,6.5 10.5,3.5 C10.5,3.5 10.287918,6.71444735 8.14498739,10.5717225 C7.14049032,12.3798172 6,13.5986793 6,16 C6,19.428689 9.51143904,21.2006583 12.0057195,21.2006583 C14.5,21.2006583 18,20.0006172 18,15.8004732 C18,14.0733981 16.6666667,11.1399071 14,7 Z"
+                          id="Path-17" fill="#000000" />
+                      </g>
+                    </svg>
+                  </span>
+                  تخفیف ها و پیشنهادها
+                </a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link">
+                  <span class="icon-menu-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path opacity="1"
+                        d="M3 14C3 13.4477 3.44772 13 4 13H20C20.5523 13 21 13.4477 21 14V19C21 20.6569 19.6569 22 18 22H6C4.34315 22 3 20.6569 3 19V14Z"
+                        fill="#7E8299" />
+                      <path opacity="1"
+                        d="M2 8C2 6.89543 2.89543 6 4 6H20C21.1046 6 22 6.89543 22 8V9C22 10.1046 21.1046 11 20 11H4C2.89543 11 2 10.1046 2 9V8Z"
+                        fill="#7E8299" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7 5C7 6.65685 8.34315 8 10 8H11V10.5C11 10.7761 11.2239 11 11.5 11H12.5C12.7761 11 13 10.7761 13 10.5V8H14C15.6569 8 17 6.65685 17 5C17 3.34315 15.6569 2 14 2C13.2316 2 12.5308 2.28885 12 2.76389C11.4692 2.28885 10.7684 2 10 2C8.34315 2 7 3.34315 7 5ZM10.5 6C10.7761 6 11 5.77614 11 5.5V5C11 4.44772 10.5523 4 10 4C9.44772 4 9 4.44772 9 5C9 5.55228 9.44772 6 10 6H10.5ZM13.5 6C13.2239 6 13 5.77614 13 5.5V5C13 4.44772 13.4477 4 14 4C14.5523 4 15 4.44772 15 5C15 5.55228 14.5523 6 14 6H13.5Z"
+                        fill="#7E8299" />
+                      <path
+                        d="M11 13.5C11 13.2239 11.2239 13 11.5 13H12.5C12.7761 13 13 13.2239 13 13.5V21.5C13 21.7761 12.7761 22 12.5 22H11.5C11.2239 22 11 21.7761 11 21.5V13.5Z"
+                        fill="#7E8299" />
+                    </svg>
+                  </span>
+                  کادو,کارت هدیه
+                </a>
+              </li>
+              <li class=" menu_item">
+                <a class="menu_link">
+                  <span class="icon-menu-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                      height="24px" viewBox="0 0 24 24" version="1.1">
+                      <g id="Stockholm-icons-/-Shopping-/-Ticket" stroke="none" stroke-width="1" fill="none"
+                        fill-rule="evenodd">
+                        <rect id="bound" x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M3,10.0500091 L3,8 C3,7.44771525 3.44771525,7 4,7 L9,7 L9,9 C9,9.55228475 9.44771525,10 10,10 C10.5522847,10 11,9.55228475 11,9 L11,7 L21,7 C21.5522847,7 22,7.44771525 22,8 L22,10.0500091 C20.8588798,10.2816442 20,11.290521 20,12.5 C20,13.709479 20.8588798,14.7183558 22,14.9499909 L22,17 C22,17.5522847 21.5522847,18 21,18 L11,18 L11,16 C11,15.4477153 10.5522847,15 10,15 C9.44771525,15 9,15.4477153 9,16 L9,18 L4,18 C3.44771525,18 3,17.5522847 3,17 L3,14.9499909 C4.14112016,14.7183558 5,13.709479 5,12.5 C5,11.290521 4.14112016,10.2816442 3,10.0500091 Z M10,11 C9.44771525,11 9,11.4477153 9,12 L9,13 C9,13.5522847 9.44771525,14 10,14 C10.5522847,14 11,13.5522847 11,13 L11,12 C11,11.4477153 10.5522847,11 10,11 Z"
+                          id="Combined-Shape-Copy" fill="#000000" opacity="1"
+                          transform="translate(12.500000, 12.500000) rotate(-45.000000) translate(-12.500000, -12.500000) " />
+                      </g>
+                    </svg>
+                  </span>
+                  ایرانی کالا
+                </a>
+                <div class="sub_menu_div_back">
+                  <div class="sub_menu_div" id="sub-menu-div" style="background-color: aliceblue;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellendus quaerat nostrum mollitia libero ipsam, atque
+                      dignissimos adipisci dolorem perspiciatis? Illum optio
+                      aliquid
+                      voluptatibus voluptas vel molestiae rerum odio numquam ex.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link">
+                  <span class="icon-menu-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                      height="20px" viewBox="0 0 24 24" version="1.1">
+                      <g id="Stockholm-icons-/-Shopping-/-Price-#2" stroke="none" stroke-width="1" fill="none"
+                        fill-rule="evenodd">
+                        <rect id="bound" x="0" y="0" width="20" height="20">
+                        </rect>
+                        <g id="Group"
+                          transform="translate(12.500000, 12.000000) rotate(-315.000000) translate(-12.500000, -12.000000) translate(6.000000, 1.000000)"
+                          fill="#707070" opacity="1" style="fill: #707070;">
+                          <path
+                            d="M0.353553391,7.14644661 L3.35355339,7.14644661 C3.4100716,7.14644661 3.46549471,7.14175791 3.51945496,7.13274826 C3.92739876,8.3050906 5.04222146,9.14644661 6.35355339,9.14644661 C8.01040764,9.14644661 9.35355339,7.80330086 9.35355339,6.14644661 C9.35355339,4.48959236 8.01040764,3.14644661 6.35355339,3.14644661 C5.04222146,3.14644661 3.92739876,3.98780262 3.51945496,5.16014496 C3.46549471,5.15113531 3.4100716,5.14644661 3.35355339,5.14644661 L0.436511831,5.14644661 C0.912589923,2.30873327 3.3805571,0.146446609 6.35355339,0.146446609 C9.66726189,0.146446609 12.3535534,2.83273811 12.3535534,6.14644661 L12.3535534,19.1464466 C12.3535534,20.2510161 11.4581229,21.1464466 10.3535534,21.1464466 L2.35355339,21.1464466 C1.24898389,21.1464466 0.353553391,20.2510161 0.353553391,19.1464466 L0.353553391,7.14644661 Z"
+                            id="Combined-Shape"
+                            transform="translate(6.353553, 10.646447) rotate(-360.000000) translate(-6.353553, -10.646447) ">
+                          </path>
+                          <rect id="Rectangle" x="2.35355339" y="13.1464466" width="8" height="2" rx="1">
+                          </rect>
+                          <rect id="Rectangle-Copy" x="3.35355339" y="17.1464466" width="6" height="2" rx="1">
+                          </rect>
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
+                  برندها
+                </a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link">
+                  <span class="icon-menu-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                      version="1.1">
+                      <circle id="Oval-5" fill="#000000" opacity="1" cx="12" cy="12" r="10" />
+                      <path
+                        d="M12,16 C12.5522847,16 13,16.4477153 13,17 C13,17.5522847 12.5522847,18 12,18 C11.4477153,18 11,17.5522847 11,17 C11,16.4477153 11.4477153,16 12,16 Z M10.591,14.868 L10.591,13.209 L11.851,13.209 C13.447,13.209 14.602,11.991 14.602,10.395 C14.602,8.799 13.447,7.581 11.851,7.581 C10.234,7.581 9.121,8.799 9.121,10.395 L7.336,10.395 C7.336,7.875 9.31,5.922 11.851,5.922 C14.392,5.922 16.387,7.875 16.387,10.395 C16.387,12.915 14.392,14.868 11.851,14.868 L10.591,14.868 Z"
+                        id="Combined-Shape" style="fill: white;" />
+                    </svg>
+                  </span>
+                  سوالی دارید؟
+                </a>
+              </li>
+            </ul>
+            <ul class="site_options">
+              <li class="shopin_cart_btn position-relative">
+                <span class="notification"></span>
+                <a href="ShoppingCart.html" class="menu_link">
+                  <span class="icon-menu-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                      height="24px" viewBox="0 0 24 24" version="1.1">
+                      <g id="Stockholm-icons-/-Shopping-/-Bag1" stroke="none" stroke-width="1" fill="none"
+                        fill-rule="evenodd">
+                        <rect id="bound" x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M14,9 L14,8 C14,6.8954305 13.1045695,6 12,6 C10.8954305,6 10,6.8954305 10,8 L10,9 L8,9 L8,8 C8,5.790861 9.790861,4 12,4 C14.209139,4 16,5.790861 16,8 L16,9 L14,9 Z M14,9 L14,8 C14,6.8954305 13.1045695,6 12,6 C10.8954305,6 10,6.8954305 10,8 L10,9 L8,9 L8,8 C8,5.790861 9.790861,4 12,4 C14.209139,4 16,5.790861 16,8 L16,9 L14,9 Z"
+                          id="Rectangle-58" fill="#000000" fill-rule="nonzero" opacity="1" />
+                        <path
+                          d="M6.84712709,9 L17.1528729,9 C17.6417121,9 18.0589022,9.35341304 18.1392668,9.83560101 L19.611867,18.671202 C19.7934571,19.7607427 19.0574178,20.7911977 17.9678771,20.9727878 C17.8592143,20.9908983 17.7492409,21 17.6390792,21 L6.36092084,21 C5.25635134,21 4.36092084,20.1045695 4.36092084,19 C4.36092084,18.8898383 4.37002252,18.7798649 4.388133,18.671202 L5.86073316,9.83560101 C5.94109783,9.35341304 6.35828794,9 6.84712709,9 Z"
+                          id="Combined-Shape" fill="#000000" />
+                      </g>
+                    </svg>
+                  </span>
+                </a>
+                <div class="navbar__soppingbag__container">
+                  <div class="card p-2 rounded-10 shadow-box mt-10">
+                    <!-- <div class="card-body p-1 py-3">
+                      <ul class="nav_shoping_cart" data-simplebar>
+                        <li>
+                          <div class="nav_Shopping_cart_item">
+                            <div class="row">
+                              <div class="col-3">
+                                <div class="nav_Shopping_cart_item_image">
+                                  <img src="assets/images/Products/product1.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-9">
+                                <div class="nav_Shopping_cart_item_desc">
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="Shc_item_description">
+                                        <div class="nav_Shc_inner">
+                                          <h4>
+                                            مادربرد ایسوس مدل ROG STRIX Z490-F GAMING
+                                          </h4>
+                                        </div>
+                                      </div>
+                                      <div class="d-flex justify-content-around">
+                                        <span class="badge badge-light">
+                                          تومان
+                                          2,500,000
+                                        </span>
+                                        <span class="material-icons-outlined icon-sm btn-icon custom-btn-danger-light">
+                                          delete
+                                        </span>
+                                      </div>
+                                      <div>
+                                        <span class="text-muted">1</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="nav_Shopping_cart_item">
+                            <div class="row">
+                              <div class="col-3">
+                                <div class="nav_Shopping_cart_item_image">
+                                  <img src="assets/images/Products/11.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-9">
+                                <div class="nav_Shopping_cart_item_desc">
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="Shc_item_description">
+                                        <div class="nav_Shc_inner">
+                                          <h4>
+                                            کفش راحتی مردانه مدل PART-SO
+                                          </h4>
+                                        </div>
+                                      </div>
+                                      <div class="d-flex justify-content-around">
+                                        <span class="badge badge-light">
+                                          تومان
+                                          26,000
+                                        </span>
+                                        <span class="material-icons-outlined icon-sm btn-icon custom-btn-danger-light">
+                                          delete
+                                        </span>
+                                      </div>
+                                      <div>
+                                        <span class="text-muted">1</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="nav_Shopping_cart_item">
+                            <div class="row">
+                              <div class="col-3">
+                                <div class="nav_Shopping_cart_item_image">
+                                  <img src="assets/images/Products/18.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-9">
+                                <div class="nav_Shopping_cart_item_desc">
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="Shc_item_description">
+                                        <div class="nav_Shc_inner">
+                                          <h4>
+                                            چراغ مطالعه باسئوس مدل DGRAD-0G
+                                          </h4>
+                                        </div>
+                                      </div>
+                                      <div class="d-flex justify-content-around">
+                                        <span class="badge badge-light">
+                                          تومان
+                                          500,000
+                                        </span>
+                                        <span class="material-icons-outlined icon-sm btn-icon custom-btn-danger-light">
+                                          delete
+                                        </span>
+                                      </div>
+                                      <div>
+                                        <span class="text-muted">1</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="nav_Shopping_cart_item">
+                            <div class="row">
+                              <div class="col-3 ">
+                                <div class="nav_Shopping_cart_item_image">
+                                  <img src="assets/images/Products/9.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-9">
+                                <div class="nav_Shopping_cart_item_desc">
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="Shc_item_description">
+                                        <div class="nav_Shc_inner">
+                                          <h4>
+                                            هودی ورزشی مردانه 1991 اس دبلیو مدل GK1912 G
+                                          </h4>
+                                        </div>
+                                      </div>
+                                      <div class="d-flex justify-content-around">
+                                        <span class="badge badge-light">
+                                          تومان
+                                          360,750
+                                        </span>
+                                        <span class="material-icons-outlined icon-sm btn-icon custom-btn-danger-light">
+                                          delete
+                                        </span>
+                                      </div>
+                                      <div>
+                                        <span class="text-muted">2</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-footer pt-3 border-top">
+                      <div class="nav_shoping_cart_option">
+                        <div class="nav_shoping_cart_option_btn">
+                          <button class="custom-btn-base-sm custom-btn-primary">
+                            ادامه فرآیند خرید <i class="material-icons-outlined icon-sm icon-c">arrow_left
+                            </i></button></div>
+                        <span class="badge badge-light-primary d-flex align-items-center fs-11">جمع :
+                          2,630,000 تومان</span>
+                      </div>
+                    </div> -->
+                    <div class="nav_shoping_cart_div_empty">
+                      <div class="nav_shoping_cart_image_back"></div>
+                      <h5>سبدخرید شما خالی است !</h5>
+                      <p>برای مشاهده محصولات بیشتر به لینک های زیر مراجعه کنید.
+                      </p>
+                      <ul>
+                        <li class="nav_shoping_cart_option_item">
+                          <a href="">تخفیف ها و پیشنهادها <i class="material-icons md-dark">whatshot</i>
+                          </a>
+                        </li>
+                        <li class="nav_shoping_cart_option_item">
+                          <a href=""> پرفروش ترین محصولات <i class="material-icons md-dark">store_mall_directory</i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu_item" id="modal-location-btn">
+                <a class="menu_link" data-as-toggle="modal" data-as-target="user_location">شهر
+                  خود را
+                  انتخاب کنید
+                  <span class="icon-menu-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                      height="24px" viewBox="0 0 24 24" version="1.1">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <rect x="0" y="0" width="24" height="24"></rect>
+                        <path
+                          d="M5,10.5 C5,6 8,3 12.5,3 C17,3 20,6.75 20,10.5 C20,12.8325623 17.8236613,16.03566 13.470984,20.1092932 C12.9154018,20.6292577 12.0585054,20.6508331 11.4774555,20.1594925 C7.15915182,16.5078313 5,13.2880005 5,10.5 Z M12.5,12 C13.8807119,12 15,10.8807119 15,9.5 C15,8.11928813 13.8807119,7 12.5,7 C11.1192881,7 10,8.11928813 10,9.5 C10,10.8807119 11.1192881,12 12.5,12 Z"
+                          fill="#000000" fill-rule="nonzero"></path>
+                      </g>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!--end :: headerBotttom-->
+
+    </section>
+  </header>
+  <!--end :: header-->
+
+  <!--begin :: asideMenu-->
+  <div class="aside">
+    <div class="aside-header">
+      <div class="aside-logo">
+        <a href="">
+          <img src="./assets/images/logo/logo-blue.png" alt="Logo">
+        </a>
+      </div>
+    </div>
+    <div class="aside-body" data-simplebar>
+      <ul class="aside-menu ">
+
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                  height="24px" viewBox="0 0 24 24" version="1.1">
+                  <g id="Stockholm-icons-/-General-/-Fire" stroke="none" stroke-width="1" fill="none"
+                    fill-rule="evenodd">
+                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+                    <path
+                      d="M14,7 C13.6666667,10.3333333 12.6666667,12.1167764 11,12.3503292 C11,12.3503292 12.5,6.5 10.5,3.5 C10.5,3.5 10.287918,6.71444735 8.14498739,10.5717225 C7.14049032,12.3798172 6,13.5986793 6,16 C6,19.428689 9.51143904,21.2006583 12.0057195,21.2006583 C14.5,21.2006583 18,20.0006172 18,15.8004732 C18,14.0733981 16.6666667,11.1399071 14,7 Z"
+                      id="Path-17" fill="#000000"></path>
+                  </g>
+                </svg>
+              </span>
+            </span>
+            <span class="aside-menu-title">تخفیف ها و پیشنهادها</span>
+          </span>
+        </li>
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link ">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path opacity="0.5"
+                    d="M3 14C3 13.4477 3.44772 13 4 13H20C20.5523 13 21 13.4477 21 14V19C21 20.6569 19.6569 22 18 22H6C4.34315 22 3 20.6569 3 19V14Z"
+                    fill="#7E8299"></path>
+                  <path opacity="0.5"
+                    d="M2 8C2 6.89543 2.89543 6 4 6H20C21.1046 6 22 6.89543 22 8V9C22 10.1046 21.1046 11 20 11H4C2.89543 11 2 10.1046 2 9V8Z"
+                    fill="#7E8299"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7 5C7 6.65685 8.34315 8 10 8H11V10.5C11 10.7761 11.2239 11 11.5 11H12.5C12.7761 11 13 10.7761 13 10.5V8H14C15.6569 8 17 6.65685 17 5C17 3.34315 15.6569 2 14 2C13.2316 2 12.5308 2.28885 12 2.76389C11.4692 2.28885 10.7684 2 10 2C8.34315 2 7 3.34315 7 5ZM10.5 6C10.7761 6 11 5.77614 11 5.5V5C11 4.44772 10.5523 4 10 4C9.44772 4 9 4.44772 9 5C9 5.55228 9.44772 6 10 6H10.5ZM13.5 6C13.2239 6 13 5.77614 13 5.5V5C13 4.44772 13.4477 4 14 4C14.5523 4 15 4.44772 15 5C15 5.55228 14.5523 6 14 6H13.5Z"
+                    fill="#7E8299"></path>
+                  <path
+                    d="M11 13.5C11 13.2239 11.2239 13 11.5 13H12.5C12.7761 13 13 13.2239 13 13.5V21.5C13 21.7761 12.7761 22 12.5 22H11.5C11.2239 22 11 21.7761 11 21.5V13.5Z"
+                    fill="#7E8299"></path>
+                </svg>
+              </span>
+            </span>
+            <span class="aside-menu-title">کادو . کارت هدیه</span>
+          </span>
+        </li>
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link ">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                  height="24px" viewBox="0 0 24 24" version="1.1">
+                  <g id="Stockholm-icons-/-Shopping-/-Ticket" stroke="none" stroke-width="1" fill="none"
+                    fill-rule="evenodd">
+                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+                    <path
+                      d="M3,10.0500091 L3,8 C3,7.44771525 3.44771525,7 4,7 L9,7 L9,9 C9,9.55228475 9.44771525,10 10,10 C10.5522847,10 11,9.55228475 11,9 L11,7 L21,7 C21.5522847,7 22,7.44771525 22,8 L22,10.0500091 C20.8588798,10.2816442 20,11.290521 20,12.5 C20,13.709479 20.8588798,14.7183558 22,14.9499909 L22,17 C22,17.5522847 21.5522847,18 21,18 L11,18 L11,16 C11,15.4477153 10.5522847,15 10,15 C9.44771525,15 9,15.4477153 9,16 L9,18 L4,18 C3.44771525,18 3,17.5522847 3,17 L3,14.9499909 C4.14112016,14.7183558 5,13.709479 5,12.5 C5,11.290521 4.14112016,10.2816442 3,10.0500091 Z M10,11 C9.44771525,11 9,11.4477153 9,12 L9,13 C9,13.5522847 9.44771525,14 10,14 C10.5522847,14 11,13.5522847 11,13 L11,12 C11,11.4477153 10.5522847,11 10,11 Z"
+                      id="Combined-Shape-Copy" fill="#000000" opacity="0.5"
+                      transform="translate(12.500000, 12.500000) rotate(-45.000000) translate(-12.500000, -12.500000) ">
+                    </path>
+                  </g>
+                </svg>
+              </span>
+            </span>
+            <span class="aside-menu-title">ایرانی کالا</span>
+            <span class="aside-menu-arrow">
+              <!-- <span class="material-icons">
+                        chevron_left
+                     </span> -->
+            </span>
+          </span>
+        </li>
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link ">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                  height="24px" viewBox="0 0 24 24" version="1.1">
+                  <g id="Stockholm-icons-/-Shopping-/-Price-#2" stroke="none" stroke-width="1" fill="none"
+                    fill-rule="evenodd">
+                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+                    <g id="Group"
+                      transform="translate(12.500000, 12.000000) rotate(-315.000000) translate(-12.500000, -12.000000) translate(6.000000, 1.000000)"
+                      fill="#000000" opacity="0.5">
+                      <path
+                        d="M0.353553391,7.14644661 L3.35355339,7.14644661 C3.4100716,7.14644661 3.46549471,7.14175791 3.51945496,7.13274826 C3.92739876,8.3050906 5.04222146,9.14644661 6.35355339,9.14644661 C8.01040764,9.14644661 9.35355339,7.80330086 9.35355339,6.14644661 C9.35355339,4.48959236 8.01040764,3.14644661 6.35355339,3.14644661 C5.04222146,3.14644661 3.92739876,3.98780262 3.51945496,5.16014496 C3.46549471,5.15113531 3.4100716,5.14644661 3.35355339,5.14644661 L0.436511831,5.14644661 C0.912589923,2.30873327 3.3805571,0.146446609 6.35355339,0.146446609 C9.66726189,0.146446609 12.3535534,2.83273811 12.3535534,6.14644661 L12.3535534,19.1464466 C12.3535534,20.2510161 11.4581229,21.1464466 10.3535534,21.1464466 L2.35355339,21.1464466 C1.24898389,21.1464466 0.353553391,20.2510161 0.353553391,19.1464466 L0.353553391,7.14644661 Z"
+                        id="Combined-Shape"
+                        transform="translate(6.353553, 10.646447) rotate(-360.000000) translate(-6.353553, -10.646447) ">
+                      </path>
+                      <rect id="Rectangle" x="2.35355339" y="13.1464466" width="8" height="2" rx="1"></rect>
+                      <rect id="Rectangle-Copy" x="3.35355339" y="17.1464466" width="6" height="2" rx="1">
+                      </rect>
+                    </g>
+                  </g>
+                </svg>
+              </span>
+            </span>
+            <span class="aside-menu-title">برندها</span>
+            <span class="aside-menu-arrow">
+              <!-- <span class="material-icons">
+                        chevron_left
+                     </span> -->
+            </span>
+          </span>
+        </li>
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link ">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                  <circle id="Oval-5" fill="#000000" opacity="0.3" cx="12" cy="12" r="10"></circle>
+                  <path
+                    d="M12,16 C12.5522847,16 13,16.4477153 13,17 C13,17.5522847 12.5522847,18 12,18 C11.4477153,18 11,17.5522847 11,17 C11,16.4477153 11.4477153,16 12,16 Z M10.591,14.868 L10.591,13.209 L11.851,13.209 C13.447,13.209 14.602,11.991 14.602,10.395 C14.602,8.799 13.447,7.581 11.851,7.581 C10.234,7.581 9.121,8.799 9.121,10.395 L7.336,10.395 C7.336,7.875 9.31,5.922 11.851,5.922 C14.392,5.922 16.387,7.875 16.387,10.395 C16.387,12.915 14.392,14.868 11.851,14.868 L10.591,14.868 Z"
+                    id="Combined-Shape" fill="#000000"></path>
+                </svg>
+              </span>
+            </span>
+            <span class="aside-menu-title">سوالی دارید؟</span>
+            <span class="aside-menu-arrow">
+              <!-- <span class="material-icons">
+                        chevron_left
+                     </span> -->
+            </span>
+          </span>
+        </li>
+
+        <span class="menu-content">
+          دسته بندی محصولات
+        </span>
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                  <path
+                    d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z"
+                    fill="#000000" fill-rule="nonzero"></path>
+                  <path
+                    d="M10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L10.1818182,16 C8.76751186,16 8,15.2324881 8,13.8181818 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 Z"
+                    fill="#000000" opacity="0.3"></path>
+                </svg>
+              </span>
+            </span>
+            <span class="aside-menu-title">کالای دیجیتال</span>
+            <span class="aside-menu-arrow">
+              <span class="material-icons">
+                chevron_left
+              </span>
+            </span>
+          </span>
+          <div id="ASAside-subMenu" class="asid-menu-sub">
+            <ul>
+              <li class="aside-menu-sub-item">
+                <a href="">گوشی موبایل</a>
+              </li>
+              <li class="aside-menu-sub-item">
+                <a href="">لوازم جانبی موبایل</a>
+              </li>
+              <li class="aside-menu-sub-item">
+                <a href="">قطعات کامپیوتر</a>
+              </li>
+              <li class="aside-menu-sub-item">
+                <a href="">هدفون وهدست</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link ">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                  <path
+                    d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z"
+                    fill="#000000" fill-rule="nonzero"></path>
+                  <path
+                    d="M10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L10.1818182,16 C8.76751186,16 8,15.2324881 8,13.8181818 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 Z"
+                    fill="#000000" opacity="0.3"></path>
+                </svg>
+              </span>
+            </span>
+            <span class="aside-menu-title">ورزش و سفر</span>
+            <span class="aside-menu-arrow">
+              <span class="material-icons">
+                chevron_left
+              </span>
+            </span>
+          </span>
+        </li>
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link ">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                  <path
+                    d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z"
+                    fill="#000000" fill-rule="nonzero"></path>
+                  <path
+                    d="M10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L10.1818182,16 C8.76751186,16 8,15.2324881 8,13.8181818 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 Z"
+                    fill="#000000" opacity="0.3"></path>
+                </svg> </span>
+            </span>
+            <span class="aside-menu-title">ابزارالات صنعتی</span>
+            <span class="aside-menu-arrow">
+              <!-- <span class="material-icons">
+                        chevron_left
+                     </span> -->
+            </span>
+          </span>
+        </li>
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link ">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                  <path
+                    d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z"
+                    fill="#000000" fill-rule="nonzero"></path>
+                  <path
+                    d="M10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L10.1818182,16 C8.76751186,16 8,15.2324881 8,13.8181818 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 Z"
+                    fill="#000000" opacity="0.3"></path>
+                </svg> </span>
+            </span>
+            <span class="aside-menu-title">زیبایی و سلامت</span>
+            <span class="aside-menu-arrow">
+              <!-- <span class="material-icons">
+                        chevron_left
+                     </span> -->
+            </span>
+          </span>
+        </li>
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link ">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                  <path
+                    d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z"
+                    fill="#000000" fill-rule="nonzero"></path>
+                  <path
+                    d="M10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L10.1818182,16 C8.76751186,16 8,15.2324881 8,13.8181818 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 Z"
+                    fill="#000000" opacity="0.3"></path>
+                </svg> </span>
+            </span>
+            <span class="aside-menu-title">مد و پوشاک</span>
+            <span class="aside-menu-arrow">
+              <!-- <span class="material-icons">
+                        chevron_left
+                     </span> -->
+            </span>
+          </span>
+        </li>
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link ">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                  <path
+                    d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z"
+                    fill="#000000" fill-rule="nonzero"></path>
+                  <path
+                    d="M10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L10.1818182,16 C8.76751186,16 8,15.2324881 8,13.8181818 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 Z"
+                    fill="#000000" opacity="0.3"></path>
+                </svg>
+              </span>
+            </span>
+            <span class="aside-menu-title">اسباب بازی کودک و نوزاد</span>
+            <span class="aside-menu-arrow">
+              <!-- <span class="material-icons">
+                        chevron_left
+                     </span> -->
+            </span>
+          </span>
+        </li>
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link ">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                  <path
+                    d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z"
+                    fill="#000000" fill-rule="nonzero"></path>
+                  <path
+                    d="M10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L10.1818182,16 C8.76751186,16 8,15.2324881 8,13.8181818 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 Z"
+                    fill="#000000" opacity="0.3"></path>
+                </svg>
+              </span>
+            </span>
+            <span class="aside-menu-title">خوردنی و آشامیدنی</span>
+            <span class="aside-menu-arrow">
+              <!-- <span class="material-icons">
+                        chevron_left
+                     </span> -->
+            </span>
+          </span>
+        </li>
+        <li class="aside-menu-item ">
+          <span class="aside-menu-link ">
+            <span class="aside-menu-icon">
+              <span class="icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                  <path
+                    d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z"
+                    fill="#000000" fill-rule="nonzero"></path>
+                  <path
+                    d="M10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L10.1818182,16 C8.76751186,16 8,15.2324881 8,13.8181818 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 Z"
+                    fill="#000000" opacity="1"></path>
+                </svg>
+              </span>
+            </span>
+            <span class="aside-menu-title">کتاب و لوازم تحریر ,هنری</span>
+            <span class="aside-menu-arrow">
+              <!-- <span class="material-icons">
+                        chevron_left
+                     </span> -->
+            </span>
+          </span>
+        </li>
+
+
+      </ul>
+    </div>
+    <div class="aside-footer"></div>
+  </div>
+  <!--end :: asideMenu-->
+
+  <!--begin :: modals-->
+  <div id="user_location" class="modal re-modal-wrapper">
+    <div class="re-modal-content">
+      <div class="re-modal ">
+        <div class="re-modal-header">
+          <div class="re-modal-header-title">
+            انتخاب آدرس
+          </div>
+          <div class="close-modal-btn">
+            <i class="material-icons">close</i>
+          </div>
+        </div>
+        <div class="re-modal-content">
+          <div class="re-modal-content-body">
+            <div class="user__location__modal__container">
+              <form action="">
+                <ul class="user__lis__locations" id="user-address">
+                  <li>
+                    <label class="radio_container">
+                      <input type="radio" name="location" checked="checked">
+                      اصفهان - باغبهادران - کرچگان - خیابان اصلی
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio_container">
+                      <input type="radio" name="location">
+                      تهران - سعادت آباد - خیابان مولوی - پلاک 5693
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio_container">
+                      <input type="radio" name="location">
+                      مشهد - طوس - خیایان حسن زاده - پلاک 63 <span class="checkmark"></span>
+                    </label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <div class="re-modal-content-option">
+            <button class="custom-btn custom-btn-primary"> <i class="material-icons-outlined icon-sm icon-c">add</i>
+              افزودن آدرس
+              جدید</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end :: modals-->
+
+  <!--begin :: main-->
+  <main>
+    <section class="site_section">
+      <!--Satrt Offers Banners-->
+      <section class="offers_banner">
+        <section class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 col-lg-8 pl-2 pr-2 ">
+              <div class="offer_inner_settion">
+                <section class="offer_banner">
+                  <div class="swiper banners_swiper shadow-box">
+                    <div class="swiper-wrapper">
+                      <div class="offer_item swiper-slide">
+                        <a href="">
+                          <img src="./assets/images/banners/banner1.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="offer_item swiper-slide">
+                        <a href="">
+                          <img src="./assets/images/banners/banner11.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="offer_item swiper-slide">
+                        <a href="">
+                          <img src="./assets/images/banners/banner14.gif" alt="">
+                        </a>
+                      </div>
+                      <div class="offer_item swiper-slide">
+                        <a href="">
+                          <img src="./assets/images/banners/banner3.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="offer_item swiper-slide">
+                        <a href="">
+                          <img src="./assets/images/banners/banner10.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="offer_item swiper-slide">
+                        <a href="">
+                          <img src="./assets/images/banners/banner5.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="offer_item swiper-slide">
+                        <a href="">
+                          <img src="./assets/images/banners/banner12.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="offer_item swiper-slide">
+                        <a href="">
+                          <img src="./assets/images/banners/banner13.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </section>
+                <div class="offers_banner_nav_left_btn">
+                  <a class="offers_banner_Prev">
+                    <i class="material-icons-outlined ">chevron_left</i>
+                  </a>
+                </div>
+                <div class="offers_banner_nav_right_btn">
+                  <a class="offers_banner_next">
+                    <i class="material-icons-outlined">chevron_right</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <div class="offer_L">
+                <div class="row h-100">
+                  <div class="col-md-6 col-lg-12 col-12 col-sm-6  offer_item_L">
+                    <a href="">
+                      <img src="./assets/images/banners/Ads/ads3.gif" alt="">
+                    </a>
+                  </div>
+                  <div class="col-md-6 col-lg-12 col-12 col-sm-6 offer_item_L">
+                    <a href="">
+                      <img src="./assets/images/banners/Ads/ads2.gif" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!--End Offers Banners -->
+
+      <!--Start grouping Proudct-->
+      <section class="cat_products">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-around flex-wrap flex-lg-nowrap">
+            <div class="cat__products_item  bg-white rounded-15 py-4 px-4 d-flex align-items-center muted-border">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <div class="cat__products_item">
+                  <img src="./assets/images/cat/clothing.png" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center py-2">
+                  <h6 class="text-muted font-weight-bold text-center fs-12">مد و پوشاک</h6>
+                  <a href="" class="text-muted">مشاهد <span class="material-icons-outlined icon-xs icon-4c">
+                      chevron_left
+                    </span></a>
+                </div>
+              </div>
+            </div>
+            <div class="cat__products_item  bg-white rounded-15 py-4 px-4 d-flex align-items-center muted-border">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <div class="cat__products_item">
+                  <img src="./assets/images/cat/industri-1.png" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center py-2">
+                  <h6 class="text-muted font-weight-bold text-center fs-12">ابزارالات صنعتی</h6>
+                  <a href="" class="text-muted">مشاهد <span class="material-icons-outlined icon-xs icon-4c">
+                      chevron_left
+                    </span></a>
+                </div>
+              </div>
+            </div>
+            <div class="cat__products_item bg-white rounded-15 py-4 px-4 d-flex align-items-center muted-border">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <div class="cat__products_item">
+                  <img src="./assets/images/cat/digital-3.png" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center py-2">
+                  <h6 class="text-muted font-weight-bold text-center flex-column fs-12">کالای دیجیتال</h6>
+                  <a href="" class="text-muted">مشاهد <span class="material-icons-outlined icon-xs icon-4c">
+                      chevron_left
+                    </span></a>
+                </div>
+              </div>
+            </div>
+            <div class="cat__products_item  bg-white rounded-15 py-4 px-4 d-flex align-items-center muted-border">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <div class="cat__products_item">
+                  <img src="./assets/images/cat/sport-2.png" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center py-2">
+                  <h6 class="text-muted font-weight-bold text-center fs-12">لوازم ورزشی</h6>
+                  <a href="" class="text-muted">مشاهد <span class="material-icons-outlined icon-xs icon-4c">
+                      chevron_left
+                    </span></a>
+                </div>
+              </div>
+            </div>
+            <div class="cat__products_item  bg-white rounded-15 py-4 px-4 d-flex align-items-center muted-border">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <div class="cat__products_item">
+                  <img src="./assets/images/cat/books.png" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center py-2">
+                  <h6 class="text-muted font-weight-bold text-center fs-12">کتاب و مجله</h6>
+                  <a href="" class="text-muted">مشاهد <span class="material-icons-outlined icon-xs icon-4c">
+                      chevron_left
+                    </span></a>
+                </div>
+              </div>
+            </div>
+            <div class="cat__products_item  bg-white rounded-15 py-4 px-4 d-flex align-items-center muted-border">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <div class="cat__products_item">
+                  <img src="./assets/images/cat/foods.png" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center py-2">
+                  <h6 class="text-muted font-weight-bold text-center fs-12">خوردنی وآشامیدنی</h6>
+                  <a href="" class="text-muted">مشاهد <span class="material-icons-outlined icon-xs icon-4c">
+                      chevron_left
+                    </span></a>
+                </div>
+              </div>
+            </div>
+            <div class="cat__products_item  bg-white rounded-15 py-4 px-4 d-flex align-items-center muted-border">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <div class="cat__products_item">
+                  <img src="./assets/images/cat/Beautyandhealth.png" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center py-2">
+                  <h6 class="text-muted font-weight-bold text-center fs-12">زیبایی و سلامت</h6>
+                  <a href="" class="text-muted">مشاهد <span class="material-icons-outlined icon-xs icon-4c">
+                      chevron_left
+                    </span></a>
+                </div>
+              </div>
+            </div>
+            <div class="cat__products_item  bg-white rounded-15 py-4 px-4 d-flex align-items-center muted-border">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <div class="cat__products_item">
+                  <img src="./assets/images/cat/foods.png" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center py-2">
+                  <h6 class="text-muted font-weight-bold text-center fs-12">خوردنی وآشامیدنی</h6>
+                  <a href="" class="text-muted">مشاهد <span class="material-icons-outlined icon-xs icon-4c">
+                      chevron_left
+                    </span></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </div>
+      </section>
+      <!--End grouping Proudct-->
+
+      <section class="container-fluid">
+
+        <!--Start Discount Products-->
+        <div class="Discount_products mt-2">
+          <div class="row">
+            <div class=" col-lg-12 row_products">
+              <!--Tittle-->
+              <div class="row caption">
+                <div class="caption_title">
+                  <h2>شگفت انگیز های روزانه</h2>
+                </div>
+              </div>
+              <!--Tittle-->
+              <div class="product_swiper">
+                <div class="swiper-wrapper">
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <!--Background-->
+                      <div class="Box_Product_background">
+                        <div class="Box_product_Sub_options">
+                          <a class="Box_product_Sub_options_favorite" href="">
+                            <i class="material-icons">favorite</i>
+                          </a>
+                        </div>
+                      </div>
+                      <!--Background-->
+                      <!--Image Product-->
+                      <div class="Box_Product_box_image">
+                        <a href="product-details.html">
+                          <img src="./assets/images/Products/10.png" alt="">
+                        </a>
+                      </div>
+                      <!--/Image Product-->
+                      <!--Titile Box Product-->
+                      <div class="Box_Product_Name">
+                        <h2>
+                          <a href="">
+                            تبلت اپل مدل iPad Pro 2020 12.9 inch 4G ظرفیت 1ترابایت
+                          </a>
+                        </h2>
+                      </div>
+                      <!--/Titile Box Product-->
+                      <!--Product Details-->
+                      <div class="product__item__details">
+                        <!--Product Details Top-->
+                        <div class="product__item__details__top">
+                          <div class="price">
+                            <div class="product_colors">
+                              <span class="Shc_inner_color" style="background-color: white;"></span>
+                              <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                            </div>
+                            <div class="product__item__details__top__price">
+                              <p>2,945,000</p>
+                              تومان
+                            </div>
+                          </div>
+                          <div class="product_options">
+                            <!-- <span class="badge badge-light-succsess">موجود
+                                             </span> -->
+                            <span class="fs-11 text-muted">
+                              <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                              9
+                            </span>
+                            <span class="rating_product">
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                            </span>
+                          </div>
+                        </div>
+                        <!--/ Product Details Top-->
+                        <!--Product Details Bottom-->
+                        <!-- /Product Details Bottom-->
+                      </div>
+                      <!--Product Details-->
+
+                    </div>
+                  </div>
+                  <!--/Item-->
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <!--Background-->
+                      <div class="Box_Product_background">
+                        <div class="Box_product_Sub_options">
+                          <a class="Box_product_Sub_options_favorite" href="">
+                            <i class="material-icons">favorite</i>
+                          </a>
+                        </div>
+                      </div>
+                      <!--Background-->
+                      <!--Image Product-->
+                      <div class="Box_Product_box_image">
+                        <a href="">
+                          <img src="./assets/images/Products/11.png" alt="">
+                        </a>
+                      </div>
+                      <!--/Image Product-->
+                      <!--Titile Box Product-->
+                      <div class="Box_Product_Name">
+                        <h2>
+                          <a href="">مادربرد ایسوس مدل ROG STRIX Z270F GAMING
+                          </a></h2>
+                      </div>
+                      <!--/Titile Box Product-->
+                      <!--Product Details-->
+                      <div class="product__item__details">
+                        <!--Product Details Top-->
+                        <div class="product__item__details__top">
+                          <div class="price">
+                            <div class="product_colors">
+                              <span class="Shc_inner_color" style="background-color: black;"></span>
+                              <span class="Shc_inner_color" style="background-color: green;"></span>
+                            </div>
+                            <div class="product__item__details__top__price">
+                              <p>2,945,000</p>
+                              تومان
+                            </div>
+                          </div>
+                          <div class="product_options">
+                            <span class="fs-11 text-muted">
+                              <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                              9
+                            </span>
+                            <span class="rating_product">
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                            </span>
+                          </div>
+                        </div>
+                        <!--/ Product Details Top-->
+                      </div>
+                      <!--Product Details-->
+                    </div>
+                  </div>
+                  <!--/Item-->
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <!--Background-->
+                      <div class="Box_Product_background">
+                        <div class="Box_product_Sub_options">
+                          <a class="Box_product_Sub_options_favorite" href="">
+                            <i class="material-icons">favorite</i>
+                          </a>
+                        </div>
+                      </div>
+                      <!--/Backgound-->
+                      <!--/Image Product-->
+                      <div class="Box_Product_box_image">
+                        <a href="">
+                          <img src="./assets/images/Products/15.png" alt="">
+                        </a>
+                      </div>
+                      <!--/Image Product-->
+                      <!--Titile Box Product-->
+                      <div class="Box_Product_Name">
+                        <h2><a href="">ساعت هوشمند اپل واچ سری 5 مدل 44m Space
+                            Aluminum
+                            Case
+                            Sport
+                            Band
+                          </a></h2>
+                      </div>
+                      <!--/Titile Box Product-->
+                      <!--Product Details-->
+                      <div class="product__item__details">
+                        <!--Product Details Top-->
+                        <div class="product__item__details__top">
+                          <div class="price">
+                            <div class="product_colors">
+                              <span class="Shc_inner_color" style="background-color: black;"></span>
+                              <span class="Shc_inner_color" style="background-color: cornflowerblue;"></span>
+                              <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                            </div>
+                            <div class="product__item__details__top__price">
+                              <p>2,945,000</p>
+                              تومان
+                            </div>
+                          </div>
+                          <div class="product_options">
+                            <span class="fs-11 text-muted">
+                              <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                              9
+                            </span>
+                            <span class="rating_product">
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                            </span>
+                          </div>
+                        </div>
+                        <!--/ Product Details Top-->
+                      </div>
+                      <!--Product Details-->
+                    </div>
+                  </div>
+                  <!--/Item-->
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <div class="Box_Product_background">
+                        <div class="Box_product_Sub_options">
+                          <a class="Box_product_Sub_options_favorite" href="">
+                            <i class="material-icons">favorite</i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="Box_Product_box_image">
+                        <a href="">
+                          <img src="./assets/images/Products/16.png" alt="">
+                        </a>
+                        <span class="offer">15%</span>
+                      </div>
+                      <div class="Box_Product_Name">
+                        <h2><a href="">مانیتور سامسونگ مدل S22R350FHM سایز 22 اینچ
+                          </a></h2>
+                      </div>
+                      <!--Product Details-->
+                      <div class="product__item__details">
+                        <!--Product Details Top-->
+                        <div class="product__item__details__top">
+                          <div class="price">
+                            <div class="product_colors">
+                              <span class="Shc_inner_color" style="background-color: black;"></span>
+                              <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                            </div>
+                            <div class="product__item__details__top__price">
+                              <p>2,945,000</p>
+                              تومان
+                            </div>
+                          </div>
+                          <div class="product_options">
+                            <span class="fs-11 text-muted">
+                              <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                              9
+                            </span>
+                            <span class="rating_product">
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                            </span>
+                          </div>
+                        </div>
+                        <!--/ Product Details Top-->
+                      </div>
+                      <!--Product Details-->
+                    </div>
+                  </div>
+                  <!--/Item-->
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <div class="Box_Product_background">
+                        <div class="Box_product_Sub_options">
+                          <a class="Box_product_Sub_options_favorite" href="">
+                            <i class="material-icons">favorite</i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="Box_Product_box_image">
+                        <a href="">
+                          <img src="./assets/images/Products/18.png" alt="">
+                        </a>
+                      </div>
+                      <div class="Box_Product_Name">
+                        <h2><a href="">کفش اسپرت پسرانه مدل jack</a></h2>
+                      </div>
+                      <!--Product Details Top-->
+                      <div class="product__item__details__top">
+                        <div class="price">
+                          <div class="product_colors">
+                            <span class="Shc_inner_color" style="background-color: black;"></span>
+                            <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                          </div>
+                          <div class="product__item__details__top__price">
+                            <p>2,945,000</p>
+                            تومان
+                          </div>
+                        </div>
+                        <div class="product_options">
+                          <span class="fs-11 text-muted">
+                            <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                            9
+                          </span>
+                          <span class="rating_product">
+                            <i class="material-icons-outlined">star</i>
+                          </span>
+                        </div>
+                      </div>
+                      <!--/ Product Details Top-->
+                    </div>
+                  </div>
+                  <!--/Item-->
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <div class="Box_Product_background"></div>
+                      <div class="Box_Product_box_image">
+                        <a href="item_single.html">
+                          <img src="./assets/images/Products/21.png" alt="">
+                        </a>
+                        <span class="offer">15%</span>
+                      </div>
+                      <div class="Box_Product_Name">
+                        <h2><a href="">کفش مخصوص پیاده روی زنانه رامیلا کد 7332</a>
+                        </h2>
+                      </div>
+                      <!--Product Details Top-->
+                      <div class="product__item__details__top">
+                        <div class="price">
+                          <div class="product_colors">
+                            <span class="Shc_inner_color" style="background-color: black;"></span>
+                            <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                          </div>
+                          <div class="product__item__details__top__price">
+                            <p>2,945,000</p>
+                            تومان
+                          </div>
+                        </div>
+                        <div class="product_options">
+                          <span class="fs-11 text-muted">
+                            <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                            9
+                          </span>
+                          <span class="rating_product">
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star_half</i>
+                          </span>
+                        </div>
+                      </div>
+                      <!--/ Product Details Top-->
+                    </div>
+                  </div>
+                  <!--/Item-->
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <div class="Box_Product_background"></div>
+                      <div class="Box_Product_box_image">
+                        <a href="">
+                          <img src="./assets/images/Products/22.png" alt="">
+                        </a>
+                        <span class="offer">50%</span>
+                      </div>
+                      <div class="Box_Product_Name">
+                        <h2><a href="">عینک محافظ چشم شیائومی مدل FJS021</a></h2>
+                      </div>
+                      <!--Product Details Top-->
+                      <div class="product__item__details__top">
+                        <div class="price">
+                          <div class="product_colors">
+                            <span class="Shc_inner_color" style="background-color: black;"></span>
+                            <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                          </div>
+                          <div class="product__item__details__top__price">
+                            <p>2,945,000</p>
+                            تومان
+                          </div>
+                        </div>
+                        <div class="product_options">
+                          <span class="fs-11 text-muted">
+                            <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                            9
+                          </span>
+                          <span class="rating_product">
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                          </span>
+                        </div>
+                      </div>
+                      <!--/ Product Details Top-->
+                    </div>
+                  </div>
+                  <!--/Item-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Discount Products-->
+
+        <div class="off_site">
+          <a href="">
+            <img src="./assets/images/banners/off1.jpg" alt="">
+          </a>
+        </div>
+
+        <!--Start New Products-->
+        <div class="row products mt-4">
+          <div class=" col-lg-12 row_products">
+            <!--Tittle-->
+            <div class=" row caption ">
+              <div class="caption_title">
+                <h2>جدیدترین محصولات</h2>
+              </div>
+            </div>
+            <!--Tittle-->
+            <div class="product_swiper">
+              <div class="swiper-wrapper">
+                <!--Item-->
+                <div class="row_item swiper-slide">
+                  <div class="Box_Product">
+                    <!--Background-->
+                    <div class="Box_Product_background">
+                      <div class="Box_product_Sub_options">
+                        <a class="Box_product_Sub_options_favorite" href="">
+                          <i class="material-icons">favorite</i>
+                        </a>
+                      </div>
+                    </div>
+                    <!--Background-->
+                    <!--Image Product-->
+                    <div class="Box_Product_box_image">
+                      <a href="product-details.html">
+                        <img src="./assets/images/Products/10.png" alt="">
+                      </a>
+                    </div>
+                    <!--/Image Product-->
+                    <!--Titile Box Product-->
+                    <div class="Box_Product_Name">
+                      <h2><a href="">تبلت اپل مدل iPad Pro 2020 12.9 inch 4G ظرفیت
+                          1
+                          ترابایت
+                        </a></h2>
+                    </div>
+                    <!--/Titile Box Product-->
+                    <!--Product Details-->
+                    <div class="product__item__details">
+                      <!--Product Details Top-->
+                      <div class="product__item__details__top">
+                        <div class="price">
+                          <div class="product_colors">
+                            <span class="Shc_inner_color" style="background-color: black;"></span>
+                            <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                          </div>
+                          <div class="product__item__details__top__price">
+                            <p>2,945,000</p>
+                            تومان
+                          </div>
+                        </div>
+                        <div class="product_options">
+                          <!-- <span class="badge badge-light-succsess">موجود
+                                       </span> -->
+                          <span class="fs-11 text-muted">
+                            <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                            9
+                          </span>
+                          <span class="rating_product">
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                          </span>
+                        </div>
+                      </div>
+                      <!--/ Product Details Top-->
+                      <!--Product Details Bottom-->
+                      <!-- /Product Details Bottom-->
+                    </div>
+                    <!--Product Details-->
+
+                  </div>
+                </div>
+                <!--/Item-->
+                <!--Item-->
+                <div class="row_item swiper-slide">
+                  <div class="Box_Product">
+                    <!--Background-->
+                    <div class="Box_Product_background">
+                      <div class="Box_product_Sub_options">
+                        <a class="Box_product_Sub_options_favorite" href="">
+                          <i class="material-icons">favorite</i>
+                        </a>
+                      </div>
+                    </div>
+                    <!--Background-->
+                    <!--Image Product-->
+                    <div class="Box_Product_box_image">
+                      <a href="">
+                        <img src="./assets/images/Products/11.png" alt="">
+                      </a>
+                    </div>
+                    <!--/Image Product-->
+                    <!--Titile Box Product-->
+                    <div class="Box_Product_Name">
+                      <h2>
+                        <a href="">مادربرد ایسوس مدل ROG STRIX Z270F GAMING
+                        </a></h2>
+                    </div>
+                    <!--/Titile Box Product-->
+                    <!--Product Details-->
+                    <div class="product__item__details">
+                      <!--Product Details Top-->
+                      <div class="product__item__details__top">
+                        <div class="price">
+                          <div class="product_colors">
+                            <span class="Shc_inner_color" style="background-color: black;"></span>
+                            <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                          </div>
+                          <div class="product__item__details__top__price">
+                            <p>2,945,000</p>
+                            تومان
+                          </div>
+                        </div>
+                        <div class="product_options">
+                          <span class="fs-11 text-muted">
+                            <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                            9
+                          </span>
+                          <span class="rating_product">
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                          </span>
+                        </div>
+                      </div>
+                      <!--/ Product Details Top-->
+                    </div>
+                    <!--Product Details-->
+                  </div>
+                </div>
+                <!--/Item-->
+                <!--Item-->
+                <div class="row_item swiper-slide">
+                  <div class="Box_Product">
+                    <!--Background-->
+                    <div class="Box_Product_background">
+                      <div class="Box_product_Sub_options">
+                        <a class="Box_product_Sub_options_favorite" href="">
+                          <i class="material-icons">favorite</i>
+                        </a>
+                      </div>
+                    </div>
+                    <!--/Backgound-->
+                    <!--/Image Product-->
+                    <div class="Box_Product_box_image">
+                      <a href="">
+                        <img src="./assets/images/Products/15.png" alt="">
+                      </a>
+                    </div>
+                    <!--/Image Product-->
+                    <!--Titile Box Product-->
+                    <div class="Box_Product_Name">
+                      <h2><a href="">ساعت هوشمند اپل واچ سری 5 مدل 44m Space
+                          Aluminum
+                          Case
+                          Sport
+                          Band
+                        </a></h2>
+                    </div>
+                    <!--/Titile Box Product-->
+                    <!--Product Details-->
+                    <div class="product__item__details">
+                      <!--Product Details Top-->
+                      <div class="product__item__details__top">
+                        <div class="price">
+                          <div class="product_colors">
+                            <span class="Shc_inner_color" style="background-color: black;"></span>
+                            <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                          </div>
+                          <div class="product__item__details__top__price">
+                            <p>2,945,000</p>
+                            تومان
+                          </div>
+                        </div>
+                        <div class="product_options">
+                          <span class="fs-11 text-muted">
+                            <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                            9
+                          </span>
+                          <span class="rating_product">
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                          </span>
+                        </div>
+                      </div>
+                      <!--/ Product Details Top-->
+                    </div>
+                    <!--Product Details-->
+                  </div>
+                </div>
+                <!--/Item-->
+                <!--Item-->
+                <div class="row_item swiper-slide">
+                  <div class="Box_Product">
+                    <div class="Box_Product_background">
+                      <div class="Box_product_Sub_options">
+                        <a class="Box_product_Sub_options_favorite" href="">
+                          <i class="material-icons">favorite</i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="Box_Product_box_image">
+                      <a href="">
+                        <img src="./assets/images/Products/16.png" alt="">
+                      </a>
+                      <span class="offer">15%</span>
+                    </div>
+                    <div class="Box_Product_Name">
+                      <h2><a href="">مانیتور سامسونگ مدل S22R350FHM سایز 22 اینچ
+                        </a></h2>
+                    </div>
+                    <!--Product Details-->
+                    <div class="product__item__details">
+                      <!--Product Details Top-->
+                      <div class="product__item__details__top">
+                        <div class="price">
+                          <div class="product_colors">
+                            <span class="Shc_inner_color" style="background-color: black;"></span>
+                            <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                          </div>
+                          <div class="product__item__details__top__price">
+                            <p>2,945,000</p>
+                            تومان
+                          </div>
+                        </div>
+                        <div class="product_options">
+                          <span class="fs-11 text-muted">
+                            <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                            9
+                          </span>
+                          <span class="rating_product">
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                          </span>
+                        </div>
+                      </div>
+                      <!--/ Product Details Top-->
+                    </div>
+                    <!--Product Details-->
+                  </div>
+                </div>
+                <!--/Item-->
+                <!--Item-->
+                <div class="row_item swiper-slide">
+                  <div class="Box_Product">
+                    <div class="Box_Product_background">
+                      <div class="Box_product_Sub_options">
+                        <a class="Box_product_Sub_options_favorite" href="">
+                          <i class="material-icons">favorite</i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="Box_Product_box_image">
+                      <a href="">
+                        <img src="./assets/images/Products/18.png" alt="">
+                      </a>
+                    </div>
+                    <div class="Box_Product_Name">
+                      <h2><a href="">کفش اسپرت پسرانه مدل jack</a></h2>
+                    </div>
+                    <!--Product Details Top-->
+                    <div class="product__item__details__top">
+                      <div class="price">
+                        <div class="product_colors">
+                          <span class="Shc_inner_color" style="background-color: black;"></span>
+                          <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                        </div>
+                        <div class="product__item__details__top__price">
+                          <p>2,945,000</p>
+                          تومان
+                        </div>
+                      </div>
+                      <div class="product_options">
+                        <span class="fs-11 text-muted">
+                          <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                          9
+                        </span>
+                        <span class="rating_product">
+                          <i class="material-icons-outlined">star</i>
+                          <i class="material-icons-outlined">star</i>
+                        </span>
+                      </div>
+                    </div>
+                    <!--/ Product Details Top-->
+                  </div>
+                </div>
+                <!--/Item-->
+                <!--Item-->
+                <div class="row_item swiper-slide">
+                  <div class="Box_Product">
+                    <div class="Box_Product_background"></div>
+                    <div class="Box_Product_box_image">
+                      <a href="item_single.html">
+                        <img src="./assets/images/Products/21.png" alt="">
+                      </a>
+                      <span class="offer">15%</span>
+                    </div>
+                    <div class="Box_Product_Name">
+                      <h2><a href="">کفش مخصوص پیاده روی زنانه رامیلا کد 7332</a>
+                      </h2>
+                    </div>
+                    <!--Product Details Top-->
+                    <div class="product__item__details__top">
+                      <div class="price">
+                        <div class="product_colors">
+                          <span class="Shc_inner_color" style="background-color: black;"></span>
+                          <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                        </div>
+                        <div class="product__item__details__top__price">
+                          <p>2,945,000</p>
+                          تومان
+                        </div>
+                      </div>
+                      <div class="product_options">
+                        <span class="fs-11 text-muted">
+                          <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                          9
+                        </span>
+                        <span class="rating_product">
+                          <i class="material-icons-outlined">star</i>
+                          <i class="material-icons-outlined">star</i>
+                        </span>
+                      </div>
+                    </div>
+                    <!--/ Product Details Top-->
+                  </div>
+                </div>
+                <!--/Item-->
+                <!--Item-->
+                <div class="row_item swiper-slide">
+                  <div class="Box_Product">
+                    <div class="Box_Product_background"></div>
+                    <div class="Box_Product_box_image">
+                      <a href="">
+                        <img src="./assets/images/Products/22.png" alt="">
+                      </a>
+                      <span class="offer">50%</span>
+                    </div>
+                    <div class="Box_Product_Name">
+                      <h2><a href="">عینک محافظ چشم شیائومی مدل FJS021</a></h2>
+                    </div>
+                    <!--Product Details Top-->
+                    <div class="product__item__details__top">
+                      <div class="price">
+                        <div class="product_colors">
+                          <span class="Shc_inner_color" style="background-color: black;"></span>
+                          <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                        </div>
+                        <div class="product__item__details__top__price">
+                          <p>2,945,000</p>
+                          تومان
+                        </div>
+                      </div>
+                      <div class="product_options">
+                        <span class="fs-11 text-muted">
+                          <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                          9
+                        </span>
+                        <span class="rating_product">
+                          <i class="material-icons-outlined">star</i>
+                          <i class="material-icons-outlined">star</i>
+                        </span>
+                      </div>
+                    </div>
+                    <!--/ Product Details Top-->
+                  </div>
+                </div>
+                <!--/Item-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End New Products-->
+
+        <!--Start banner Offer 2-->
+        <div class="row">
+          <div class="col-lg-12 position-relative">
+            <div class="banner_offers2 ">
+              <div class="banner_offer2">
+                <a href="">
+                  <img src="./assets/images/banners/off2.gif" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End banner Offer 2-->
+
+        <!--Start Discount Products-->
+        <div class="BestSeling_products mt-4">
+          <div class="row">
+            <div class=" col-lg-12 row_products">
+              <!--Tittle-->
+              <div class="row caption">
+                <div class="caption_title">
+                  <h2> پرفروش ترین محصولات فروشگاه</h2>
+                </div>
+              </div>
+              <!--Tittle-->
+              <div class="product_swiper">
+                <div class="swiper-wrapper">
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <!--Background-->
+                      <div class="Box_Product_background">
+                        <div class="Box_product_Sub_options">
+                          <a class="Box_product_Sub_options_favorite" href="">
+                            <i class="material-icons">favorite</i>
+                          </a>
+                        </div>
+                      </div>
+                      <!--Background-->
+                      <!--Image Product-->
+                      <div class="Box_Product_box_image">
+                        <a href="product-details.html">
+                          <img src="./assets/images/Products/10.png" alt="">
+                        </a>
+                      </div>
+                      <!--/Image Product-->
+                      <!--Titile Box Product-->
+                      <div class="Box_Product_Name">
+                        <h2><a href="">تبلت اپل مدل iPad Pro 2020 12.9 inch 4G ظرفیت
+                            1
+                            ترابایت
+                          </a></h2>
+                      </div>
+                      <!--/Titile Box Product-->
+                      <!--Product Details-->
+                      <div class="product__item__details">
+                        <!--Product Details Top-->
+                        <div class="product__item__details__top">
+                          <div class="price">
+                            <div class="product_colors">
+                              <span class="Shc_inner_color" style="background-color: black;"></span>
+                              <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                            </div>
+                            <div class="product__item__details__top__price">
+                              <p>2,945,000</p>
+                              تومان
+                            </div>
+                          </div>
+                          <div class="product_options">
+                            <!-- <span class="badge badge-light-succsess">موجود
+                                       </span> -->
+                            <span class="fs-11 text-muted">
+                              <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                              9
+                            </span>
+                            <span class="rating_product">
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                            </span>
+                          </div>
+                        </div>
+                        <!--/ Product Details Top-->
+                        <!--Product Details Bottom-->
+                        <!-- /Product Details Bottom-->
+                      </div>
+                      <!--Product Details-->
+
+                    </div>
+                  </div>
+                  <!--/Item-->
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <!--Background-->
+                      <div class="Box_Product_background">
+                        <div class="Box_product_Sub_options">
+                          <a class="Box_product_Sub_options_favorite" href="">
+                            <i class="material-icons">favorite</i>
+                          </a>
+                        </div>
+                      </div>
+                      <!--Background-->
+                      <!--Image Product-->
+                      <div class="Box_Product_box_image">
+                        <a href="">
+                          <img src="./assets/images/Products/11.png" alt="">
+                        </a>
+                      </div>
+                      <!--/Image Product-->
+                      <!--Titile Box Product-->
+                      <div class="Box_Product_Name">
+                        <h2>
+                          <a href="">مادربرد ایسوس مدل ROG STRIX Z270F GAMING
+                          </a></h2>
+                      </div>
+                      <!--/Titile Box Product-->
+                      <!--Product Details-->
+                      <div class="product__item__details">
+                        <!--Product Details Top-->
+                        <div class="product__item__details__top">
+                          <div class="price">
+                            <div class="product_colors">
+                              <span class="Shc_inner_color" style="background-color: black;"></span>
+                              <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                            </div>
+                            <div class="product__item__details__top__price">
+                              <p>2,945,000</p>
+                              تومان
+                            </div>
+                          </div>
+                          <div class="product_options">
+                            <span class="fs-11 text-muted">
+                              <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                              9
+                            </span>
+                            <span class="rating_product">
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                            </span>
+                          </div>
+                        </div>
+                        <!--/ Product Details Top-->
+                      </div>
+                      <!--Product Details-->
+                    </div>
+                  </div>
+                  <!--/Item-->
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <!--Background-->
+                      <div class="Box_Product_background">
+                        <div class="Box_product_Sub_options">
+                          <a class="Box_product_Sub_options_favorite" href="">
+                            <i class="material-icons">favorite</i>
+                          </a>
+                        </div>
+                      </div>
+                      <!--/Backgound-->
+                      <!--/Image Product-->
+                      <div class="Box_Product_box_image">
+                        <a href="">
+                          <img src="./assets/images/Products/15.png" alt="">
+                        </a>
+                      </div>
+                      <!--/Image Product-->
+                      <!--Titile Box Product-->
+                      <div class="Box_Product_Name">
+                        <h2><a href="">ساعت هوشمند اپل واچ سری 5 مدل 44m Space
+                            Aluminum
+                            Case
+                            Sport
+                            Band
+                          </a></h2>
+                      </div>
+                      <!--/Titile Box Product-->
+                      <!--Product Details-->
+                      <div class="product__item__details">
+                        <!--Product Details Top-->
+                        <div class="product__item__details__top">
+                          <div class="price">
+                            <div class="product_colors">
+                              <span class="Shc_inner_color" style="background-color: black;"></span>
+                              <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                            </div>
+                            <div class="product__item__details__top__price">
+                              <p>45,000</p>
+                              تومان
+                            </div>
+                          </div>
+                          <div class="product_options">
+                            <span class="fs-11 text-muted">
+                              <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                              9
+                            </span>
+                            <span class="rating_product">
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                              <i class="material-icons-outlined">star</i>
+                            </span>
+                          </div>
+                        </div>
+                        <!--/ Product Details Top-->
+                      </div>
+                      <!--Product Details-->
+                    </div>
+                  </div>
+                  <!--/Item-->
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <div class="Box_Product_background">
+                        <div class="Box_product_Sub_options">
+                          <a class="Box_product_Sub_options_favorite" href="">
+                            <i class="material-icons">favorite</i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="Box_Product_box_image">
+                        <a href="">
+                          <img src="./assets/images/Products/16.png" alt="">
+                        </a>
+                        <span class="offer">15%</span>
+                      </div>
+                      <div class="Box_Product_Name">
+                        <h2><a href="">مانیتور سامسونگ مدل S22R350FHM سایز 22 اینچ
+                          </a></h2>
+                      </div>
+                      <!--Product Details-->
+                      <div class="product__item__details">
+                        <!--Product Details Top-->
+                        <div class="product__item__details__top">
+                          <div class="price">
+                            <div class="product_colors">
+                              <span class="Shc_inner_color" style="background-color: black;"></span>
+                              <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                            </div>
+                            <div class="product__item__details__top__price">
+                              <p>95,000</p>
+                              تومان
+                            </div>
+                          </div>
+                          <div class="product_options">
+                            <span class="fs-11 text-muted">
+                              <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                              9
+                            </span>
+                            <span class="rating_product">
+                              <i class="material-icons-outlined">star</i>
+                            </span>
+                          </div>
+                        </div>
+                        <!--/ Product Details Top-->
+                      </div>
+                      <!--Product Details-->
+                    </div>
+                  </div>
+                  <!--/Item-->
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <div class="Box_Product_background">
+                        <div class="Box_product_Sub_options">
+                          <a class="Box_product_Sub_options_favorite" href="">
+                            <i class="material-icons">favorite</i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="Box_Product_box_image">
+                        <a href="">
+                          <img src="./assets/images/Products/18.png" alt="">
+                        </a>
+                      </div>
+                      <div class="Box_Product_Name">
+                        <h2><a href="">کفش اسپرت پسرانه مدل jack</a></h2>
+                      </div>
+                      <!--Product Details Top-->
+                      <div class="product__item__details__top">
+                        <div class="price">
+                          <div class="product_colors">
+                            <span class="Shc_inner_color" style="background-color: black;"></span>
+                            <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                          </div>
+                          <div class="product__item__details__top__price">
+                            <p>2,945,000</p>
+                            تومان
+                          </div>
+                        </div>
+                        <div class="product_options">
+                          <span class="fs-11 text-muted">
+                            <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                            9
+                          </span>
+                          <span class="rating_product">
+                            <i class="material-icons-outlined">star</i>
+                          </span>
+                        </div>
+                      </div>
+                      <!--/ Product Details Top-->
+                    </div>
+                  </div>
+                  <!--/Item-->
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <div class="Box_Product_background"></div>
+                      <div class="Box_Product_box_image">
+                        <a href="item_single.html">
+                          <img src="./assets/images/Products/21.png" alt="">
+                        </a>
+                        <span class="offer">15%</span>
+                      </div>
+                      <div class="Box_Product_Name">
+                        <h2><a href="">کفش مخصوص پیاده روی زنانه رامیلا کد 7332</a>
+                        </h2>
+                      </div>
+                      <!--Product Details Top-->
+                      <div class="product__item__details__top">
+                        <div class="price">
+                          <div class="product_colors">
+                            <span class="Shc_inner_color" style="background-color: black;"></span>
+                            <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                          </div>
+                          <div class="product__item__details__top__price">
+                            <p>2,945,000</p>
+                            تومان
+                          </div>
+                        </div>
+                        <div class="product_options">
+                          <span class="fs-11 text-muted">
+                            <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                            9
+                          </span>
+                          <span class="rating_product">
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                          </span>
+                        </div>
+                      </div>
+                      <!--/ Product Details Top-->
+                    </div>
+                  </div>
+                  <!--/Item-->
+                  <!--Item-->
+                  <div class="row_item swiper-slide">
+                    <div class="Box_Product">
+                      <div class="Box_Product_background"></div>
+                      <div class="Box_Product_box_image">
+                        <a href="">
+                          <img src="./assets/images/Products/22.png" alt="">
+                        </a>
+                        <span class="offer">50%</span>
+                      </div>
+                      <div class="Box_Product_Name">
+                        <h2><a href="">عینک محافظ چشم شیائومی مدل FJS021</a></h2>
+                      </div>
+                      <!--Product Details Top-->
+                      <div class="product__item__details__top">
+                        <div class="price">
+                          <div class="product_colors">
+                            <span class="Shc_inner_color" style="background-color: black;"></span>
+                            <span class="Shc_inner_color" style="background-color: tomato;"></span>
+                          </div>
+                          <div class="product__item__details__top__price">
+                            <p>2,945,000</p>
+                            تومان
+                          </div>
+                        </div>
+                        <div class="product_options">
+                          <span class="fs-11 text-muted">
+                            <i class="material-icons-outlined icon-xs icon-4c text-muted">chat_bubble_outline</i>
+                            9
+                          </span>
+                          <span class="rating_product">
+                            <i class="material-icons-outlined">star</i>
+                            <i class="material-icons-outlined">star</i>
+                          </span>
+                        </div>
+                      </div>
+                      <!--/ Product Details Top-->
+                    </div>
+                  </div>
+                  <!--/Item-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Discount Products-->
+
+        <!--Start Best Brands-->
+        <!-- <div class="brands shadow-box rounded-15">
+               <div class="container-fluid">
+                  <div class="row caption">
+                     <div class="caption_title">
+                        <h2>برندهای ویژه</h2>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="brands_swiper">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <a href="">
+                                 <img src="./assets/images/brands/xiaomi.png" alt="">
+                              </a>
+                           </div>
+                           <div class="swiper-slide">
+                              <a href="">
+                                 <img src="./assets/images/brands/Adata.jpg" alt="">
+                              </a>
+                           </div>
+                           <div class="swiper-slide">
+                              <a href="">
+                                 <img src="./assets/images/brands/geil.png" alt="">
+                              </a>
+                           </div>
+                           <div class="swiper-slide">
+                              <a href="">
+                                 <img src="./assets/images/brands/Intel.jpg" alt="">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div> -->
+        <!--End Best Brands-->
+      </section>
+
+      <section class="card shadow-box rounded-7 mt-5">
+
+        <!--Start banner Offer 3-->
+        <div class="container-fluid">
+          <div class="row banner_offers_down">
+            <div class="col-md-6 col-12 banner_offers_down_item">
+              <div class="banner_offers3">
+                <div class="banner_offer3">
+                  <a href="">
+                    <img src="./assets/images/banners/banner-sm01.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 banner_offers_down_item">
+              <div class="banner_offers3">
+                <div class="banner_offer3">
+                  <a href="">
+                    <img src="./assets/images/banners/banner-sm02.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End banner Offer 3-->
+
+
+        <!--begin :: featureHome-->
+        <section class="fetaure_home">
+          <div class="fetaure_home_title">
+            <h2><span>باخیالت راحت</span><br>
+              از آســـانـــا خرید کنید
+            </h2>
+          </div>
+          <div class="container-fluid">
+            <div class="all_fetures row">
+              <div class="feature col-12 col-md-3">
+                <div class=" fetaure_Images">
+                  <img src="./assets/images/other/ReturnProduct.png" alt="">
+                </div>
+                <div class="feature_title">ًضمانت بازگشت کالا</div>
+                <div class="feature_description">اگر کالا برای شما مناسب نبود میتوانید تا یک
+                  هفته آن
+                  را
+                  تغویض کنید.</div>
+              </div>
+              <div class="feature col-12 col-md-3">
+                <div class=" fetaure_Images">
+                  <img src="./assets/images/other/FastDelivery.png" alt="">
+                </div>
+                <div class="feature_title">تحویل سریع وآسان</div>
+                <div class="feature_description">سفارش های بالای 200 هزار تومان را در تهران و
+                  شهرستان
+                  رایگان تحویل بگیرید.</div>
+              </div>
+              <div class="feature col-12 col-md-3">
+                <div class=" fetaure_Images">
+                  <img src="./assets/images/other/OrginalProduct.png" alt="">
+                </div>
+                <div class="feature_title">کالای اورجینال</div>
+                <div class="feature_description">با اطمینان از اورجینال بودن کالا خرید کنید.
+                </div>
+              </div>
+              <div class="feature col-12 col-md-3">
+                <div class=" fetaure_Images">
+                  <img src="./assets/images/other/Pay On the location.png" alt="">
+                </div>
+                <div class="feature_title">پرداخت درب منزل</div>
+                <div class="feature_description">محصول را درب منزل تحویل بگیرید
+                  و سپس هزینه را درب منزل پرداخت کنید.
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="container">
+                <div class="col-12">
+                  <div class="news__letter">
+                    <h5 class="footer_title">ثبت نام در خبرنامه </h5>
+                    <p>با ثبت‌ نام در خبرنامه <span> آسـانـا </span>، اولین نفری باشید که
+                      از
+                      جدیدترین
+                      محصولات،
+                      جشنواره‌ها
+                      و فروش‌های ویژه ما مطلع می‌شوید.</p>
+                    <form action="">
+                      <div class="d-flex justify-content-center position-relative">
+                        <div class="w-50 mx-1 position-relative">
+                          <input type="email" name="" id="" placeholder="ایمیل"
+                            class="news__letter__subscription__input">
+                          <i class="material-icons icon-sm">drafts</i>
+                        </div>
+                        <div class="w-50 mx-1 position-relative">
+                          <input type="tel" name="" id="" placeholder="شماره تلفن همراه"
+                            class="news__letter__subscription__input">
+                          <i class="material-icons icon-sm md-dark">phone</i>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end py-3">
+                        <button class="btn-fading rounded-15" type="submit">
+                          <span>عضویت در خبرنامه</span>
+                          <i class="material-icons-outlined">near_me</i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--end :: featureHome-->
+
+        <!--begin :: footer-->
+
+        <!--begin :: footerTop-->
+        <footer class="footer_c">
+          <section class="container-fluid">
+            <section class="footer_top">
+              <div class="row">
+                <div class="customer_services col-md-3 col-6">
+                  <h5 class="footer_title"> <i class="material-icons md-dark">store</i> خدمات مشتریان
+                  </h5>
+                  <ul class="footer_links">
+                    <li><a href="">پاسخ به پرسش های متدوال</a></li>
+                    <li><a href="">رویه های بازکرداندن کالا</a></li>
+                    <li><a href="">راهنمای خرید کالا</a></li>
+                    <li><a href="">حریم خصوصی</a></li>
+                  </ul>
+                </div>
+                <div class="infornation col-md-3 col-6">
+                  <h5 class="footer_title"> <i class="material-icons md-dark">info_outline</i> اطلاعات
+                    فروشگاه</h5>
+                  <ul class="footer_links">
+                    <li><a href="">درباره ما</a></li>
+                    <li><a href="">تماس با ما</a></li>
+                    <li><a href="">قوانین و مقررات</a></li>
+                  </ul>
+                </div>
+                <div class="infornation col-md-3 col-6">
+                  <h5 class="footer_title"> <i class="material-icons md-dark">info_outline</i> اطلاعات
+                    فروشگاه</h5>
+                  <ul class="footer_links">
+                    <li><a href="">پشتیبانی: <span>5065-3669-021</span></a></li>
+                    <li><a href="">24 ساعته میزبان صدای گرمتان هستیم</li>
+                    <li><a href="">ایمیل: <span>info@asana.com</span></a></li>
+                    <li><a href="">آدرس: <span>اصفهان-باغبهادران</span></a></li>
+                  </ul>
+                </div>
+                <div class="information col-md-3 col-6">
+                  <p>آسـانـا را در شبک های اجتماعی دنبال کنید</p>
+                  <ul class="footer_social">
+                    <li class="social_item"><a href=""><img src="./assets/svg/brands/telegram-2.svg" alt=""></a>
+                    </li>
+                    <li class="social_item"><a href=""><img src="./assets/svg/brands/instagram-2-1.svg" alt=""></a>
+                    </li>
+                    <li class="social_item"><a href=""><img src="./assets/svg/brands/facebook-4.svg" alt=""></a>
+                    </li>
+                    <li class="social_item"><a href=""><img src="./assets/svg/brands/twitter.svg" alt=""></a>
+                    </li>
+                  </ul>
+                  <div class="application">
+                    <a href="">
+                      <i class="material-icons-outlined">download</i>
+                      دانلود اپلیکیشن <span>آسانا</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="footer_bottom">
+              <div class="about">
+                <h5 class="about_footer_title">فروشگاه اینترنتی آســـانـــا</h5>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                  و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                  کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                  آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                  ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که
+                  تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+                  دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم
+                  ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                  متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                  کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                  آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                  ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که
+                  تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+                  دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                </p>
+              </div>
+            </section>
+          </section>
+        </footer>
+        <!--end :: footerTop-->
+
+        <!--begin :: footerBottom-->
+        <footer class="footer_cr">
+          <div class="container">
+            <div class="copyright">
+              <p>کليه حقوق اين سايت متعلق (فروشگاه اینترنتی آسـانـا) می‌باشد و
+                هرگونه کپی برداری غیر
+                قانونی
+                محسوب
+                خواهد شد.
+              </p>
+              <p> asana.com - 2020 © Copyright</p>
+            </div>
+          </div>
+        </footer>
+        <!--end :: footerBottom-->
+
+        <!--end :: footer-->
+      </section>
+
+    </section>
+  </main>
+  <!--end :: main-->
+
+
+  <!--begin :: backdrop-->
+  <div class="backDrop"></div>
+  <!--end :: backdrop-->
+
+</body>
+
+</html>

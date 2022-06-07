@@ -1,0 +1,134 @@
+.fetaure_home {
+  margin-bottom: 80px;
+  &_title {
+    h2 {
+      text-align: center;
+      color: $text_color;
+      font-size: 30px;
+      line-height: 50px;
+      margin: 45px 0px 45px 0px;
+
+      // @media #{$tablet} {
+      //   margin: 55px 0px 50px 0px;
+      //   font-size: 32px;
+      // }
+      // @media #{$desktop} {
+      //   font-size: 38px;
+      // }
+      span {
+        color: $text_color;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        // @media #{$tablet} {
+        //   font-size: 28px;
+        // }
+        // @media #{$desktop} {
+        //   font-size: 32px;
+        // }
+      }
+    }
+  }
+  .feature {
+    @include flexbox;
+    @include flex-direction(column);
+    text-align: center;
+    padding: 5px;
+  }
+
+  .feature_title {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: YekanBold;
+    user-select: none;
+  }
+
+  .feature_description {
+    word-wrap: 70%;
+    font-family: IRANSans;
+    width: 100%;
+    margin: auto;
+    user-select: none;
+    line-height: 22px;
+    font-size: 12px;
+  }
+
+  .fetaure_Images {
+    width: 100%;
+    height: 120px;
+    // @media #{$Mobile} {
+    //   width: 100%;
+    //   height: 120px;
+    // }
+    > img {
+      background-size: cover;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.news__letter {
+  margin: 60px 0 30px 0;
+  background-image: url('../../assets/media/svg/newsletter.svg');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  > h5 {
+    text-align: center;
+    font-size: 22px;
+    font-family: YekanBold;
+  }
+
+  > p {
+    text-align: center;
+    font-family: IRANSans;
+    color: $text_color;
+    line-height: 40px;
+    span {
+      color: $Primary-color;
+      font-weight: 600;
+      font-family: YekanBold;
+      font-size: 15px;
+    }
+  }
+
+  form {
+    position: relative;
+    .placeholder {
+      position: absolute;
+      right: 18px;
+      top: 11px;
+      font-size: 13px;
+      opacity: 0.8;
+      position: relative;
+    }
+  }
+}
+.news__letter__subscription__input {
+  position: relative;
+  background-color: $white-color;
+  display: inline-block;
+  padding: 10px 32px;
+  width: 100%;
+  height: 50px;
+  font-weight: 400;
+  color: #000000;
+  font-size: 13px;
+  border: 0.4px solid #00000028;
+  @include border-radius(15px);
+  @include box-shadow(0 0 10px rgba(240, 240, 240, 0.644));
+  &::placeholder {
+    font-size: 12px;
+  }
+
+  + i {
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    color: #c0c0c079;
+  }
+}
